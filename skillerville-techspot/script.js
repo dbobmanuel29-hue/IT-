@@ -46,12 +46,15 @@ function validateContactForm(event) {
     return false;
   }
 
-  // Friendly alert popup
-  alert("Thank you, " + name + "! Your inquiry has been sent to Skillerville Techspot. We will reach out to you shortly.");
+  // This is a demonstration form: no backend or email service is connected.
+  // Be clear that validation succeeded but the message was not sent.
+  alert(
+    "Thanks, " + name + "! The form validation worked, but this is only a demonstration. " +
+    "Your message has NOT been sent or saved. Please contact Skillerville Techspot through a verified official channel."
+  );
 
-  // Reset form fields
-  document.getElementById("contactForm").reset();
-  return true;
+  // Keep the entered text visible so the user can copy it if needed.
+  return false;
 }
 
 // 3. Simple Search Function for Course Tracks
