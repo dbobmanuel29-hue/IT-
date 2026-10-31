@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skillerville Techspot - Premier Technology Hub & Academy</title>
+  <!-- Favicon: Official Skillerville Logo -->
+  <link rel="icon" type="image/jpeg" href="images/favicon.jpg">
+  <!-- Primary Stylesheet: 100% Pure CSS3 Animations & Responsive Design -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =======================================================================
+       1. TOP ANNOUNCEMENT BAR
+       Features live enrollment pulse indicator and academy core specialties.
+       ======================================================================= -->
+  <aside class="top-bar" aria-label="Announcement">
+    <div class="container" style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+      <span class="status-dot"></span>
+      <span><strong>Admissions Open:</strong> Web Development • Cyber Security • Financial Trading • Computer Basics • SIWES Hub (Port Harcourt)</span>
+    </div>
+  </aside>
+
+  <!-- =======================================================================
+       2. PRIMARY HEADER / NAVIGATION BAR
+       Minimalist editorial navigation matching reference layout.
+       ======================================================================= -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <!-- Brand Logo & Entity Title -->
+        <a href="index.html" class="brand-logo" aria-label="Skillerville Techspot Home">
+          <img src="images/skillerville-logo.jpg" alt="Skillerville Logo">
+          <div class="brand-logo-text">
+            <span>Skillerville</span>
+            <small>Techspot • Enterprise</small>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Tracks</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="#methodology">Methodology</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <!-- Right Action Button & Mobile Hamburger Toggle -->
+        <div class="nav-right-btn">
+          <a href="contact.html" class="btn btn-black">Enroll Now</a>
+          <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle Navigation Menu">☰</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- =====================================================================
+         3. HERO SECTION (Aligned with Poliform Reference Style)
+         Clean, grounded editorial layout: bold center typography, natural
+         lighting, grounded narrative & rotating emblem stamp (No floating glass).
+         ===================================================================== -->
+    <section class="hero-section" aria-label="Hero Introduction">
+      <div class="container">
+        <div class="hero-card">
+          <!-- Hero Background Photography -->
+          <img src="images/hero-tech.jpg" alt="Skillerville students coding in tech lab" class="hero-bg-img">
+          
+          <!-- Atmospheric Dark Gradient Overlay -->
+          <div class="hero-overlay"></div>
+
+          <!-- Top Micro-Bar Inside Card -->
+          <div class="hero-card-topbar">
+            <span class="hero-tag-text">Port Harcourt, Rivers State • Est. 2026</span>
+            <span class="hero-tag-text" style="color: #ffffff; letter-spacing: 0.1em;">Admissions Open</span>
+          </div>
+
+          <!-- Bold Center Editorial Title (Poliform "Contemporary" Style) -->
+          <div class="hero-title-wrap">
+            <h1 class="hero-big-title">Skillerville</h1>
+          </div>
+
+          <!-- Grounded Lower Content Block (Clean, Human, No Floating Glass) -->
+          <div class="hero-lower-content">
+            <div class="hero-editorial-copy">
+              <p>Where technical discipline meets practical craft. Port Harcourt's dedicated space for software engineering, cyber defense, quantitative market analysis, and university SIWES mentorship.</p>
+              <div class="hero-btn-row">
+                <a href="courses.html" class="btn btn-white">Explore Our Tracks →</a>
+                <a href="about.html" class="btn btn-outline-white">About the Hub</a>
+              </div>
+            </div>
+
+            <!-- Pure CSS Rotating Circular Stamp Badge -->
+            <div class="hero-circle-badge-wrap">
+              <div class="hero-circle-badge" title="Skillerville Enterprise">
+                <span class="hero-badge-inner-text">
+                  Skillerville<br>Techspot<br>• 2026 •
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         4. ASYMMETRIC BENTO SHOWCASE (Poliform 2nd Section)
+         Left large photo card + Right stacked column (tinted text card + photo card).
+         ===================================================================== -->
+    <section class="showcase-section" aria-label="Ecosystem Showcase">
+      <div class="container">
+        <div class="showcase-grid">
+          
+          <!-- Left Large Card: Hands-on Tech Hub -->
+          <article class="showcase-card-left">
+            <div class="showcase-photo-wrap">
+              <img src="images/highlight-main.jpg" alt="Hands-on coding lab workstation">
+            </div>
+            <div class="showcase-content-left">
+              <div class="eyebrow-tag">Practical Training & Innovation Hub</div>
+              <h2>Multi-Disciplinary Innovation Center</h2>
+              <p>We blend software development, cyber security defense, quantitative financial trading, and foundational computer literacy into an interactive environment where trainees gain practical, workplace-ready mastery.</p>
+            </div>
+          </article>
+
+          <!-- Right Stacked Column -->
+          <div class="showcase-col-right">
+            <!-- Top Tinted Beige Card -->
+            <div class="showcase-card-text">
+              <span class="pill-badge">Spotlight</span>
+              <div class="showcase-url-slug">skillerville-techspot.ng / real-world craft</div>
+              <h3>Into a space of digital mastery</h3>
+              <p>From fundamental computer systems to defensive network architectures and algorithmic trading methods, we cultivate disciplined practitioners ready for industry.</p>
+              <a href="about.html" class="btn btn-black" style="align-self: flex-start;">Learn More →</a>
+            </div>
+
+            <!-- Bottom Photo Card with Circular ↗ Button -->
+            <div class="showcase-card-photo">
+              <img src="images/highlight-sub1.jpg" alt="Skillerville training facility workstation">
+              <span class="showcase-photo-overlay-tag">Focused Labs</span>
+              <a href="courses.html" class="arrow-circle-btn" title="View Training Tracks" aria-label="View Courses">↗</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         5. STATISTICS COUNTER STRIP (Poliform 3rd Section)
+         Clean 4-column minimal metrics with uppercase micro-labels.
+         ===================================================================== -->
+    <section class="stats-section" aria-label="Key Achievements">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <h3>500+</h3>
+            <p>Graduates & Trainees</p>
+          </div>
+          <div class="stat-item">
+            <h3>20+</h3>
+            <p>Industry Projects Built</p>
+          </div>
+          <div class="stat-item">
+            <h3>50+</h3>
+            <p>Partner Mentors & Networks</p>
+          </div>
+          <div class="stat-item">
+            <h3>1st</h3>
+            <p>Choice for SIWES & IT in PH</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         6. SPLIT EDITORIAL FEATURE (Poliform 4th Section)
+         High-resolution facility photo on left, editorial text on right.
+         ===================================================================== -->
+    <section class="split-feature-section" aria-label="About Skillerville Techspot">
+      <div class="container">
+        <div class="split-feature-box">
+          <div class="split-feature-img">
+            <img src="images/spotlight-2.jpg" alt="Skillerville workspace and modern lab environment">
+          </div>
+          <div class="split-feature-text">
+            <span class="pill-badge">Practical • Rigorous • Timeless</span>
+            <h2>Modern Tech, Timeless Discipline</h2>
+            <p>Skillerville Enterprise is a premier technology solutions provider and practical learning hub. We bridge the gap between academic theory and technical industry demands through hands-on laboratory exercises, institutional SIWES guidance, and live software engineering projects.</p>
+            <a href="about.html" class="btn btn-black">About Our Hub →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         7. CURATED TRAINING TRACKS (Poliform 6 Tall Cards with ↗ Arrows)
+         6 distinct rounded cards with CSS hover zoom, gradient overlays & ↗ pills.
+         ===================================================================== -->
+    <section class="tracks-section" aria-label="Curated Training Tracks">
+      <div class="container">
+        <!-- Split Section Header -->
+        <div class="section-head-split">
+          <div class="section-head-left">
+            <h2>Explore Our Curated Tracks</h2>
+          </div>
+          <div class="section-head-right">
+            <p>Skillerville showcases a cohesive curriculum structured for modern technology careers, real defense capability, and industrial relevance.</p>
+            <a href="courses.html" class="btn btn-black">View All Tracks →</a>
+          </div>
+        </div>
+
+        <!-- 6-Card Grid (3 Columns x 2 Rows) -->
+        <div class="tracks-grid">
+          
+          <!-- Card 1: Full-Stack Web Engineering -->
+          <article class="track-card">
+            <img src="images/course-fullstack.jpg" alt="Full-Stack Web Development Track">
+            <div class="track-card-overlay"></div>
+            <div class="track-card-footer">
+              <div>
+                <h3>Full-Stack Engineering</h3>
+                <p>Frontend, Backend & Relational Databases</p>
+              </div>
+              <a href="courses.html" class="track-arrow-circle" title="View Full-Stack Track" aria-label="View Full-Stack">↗</a>
+            </div>
+          </article>
+
+          <!-- Card 2: Cyber Security & Defense -->
+          <article class="track-card">
+            <img src="images/course-cybersecurity.jpg" alt="Cyber Security and Network Defense">
+            <div class="track-card-overlay"></div>
+            <div class="track-card-footer">
+              <div>
+                <h3>Cyber Security & Defense</h3>
+                <p>Network Security, Ethical Defense & Auditing</p>
+              </div>
+              <a href="courses.html" class="track-arrow-circle" title="View Cyber Security Track" aria-label="View Cyber Security">↗</a>
+            </div>
+          </article>
+
+          <!-- Card 3: Financial Market Trading -->
+          <article class="track-card">
+            <img src="images/course-trading.jpg" alt="Financial Market Trading and Technical Analysis">
+            <div class="track-card-overlay"></div>
+            <div class="track-card-footer">
+              <div>
+                <h3>Financial Market Trading</h3>
+                <p>Technical Analysis, Risk Models & Crypto</p>
+              </div>
+              <a href="courses.html" class="track-arrow-circle" title="View Trading Track" aria-label="View Trading">↗</a>
+            </div>
+          </article>
+
+          <!-- Card 4: UI/UX & Digital Design -->
+          <article class="track-card">
+            <img src="images/course-design.jpg" alt="UI and UX Digital Product Design">
+            <div class="track-card-overlay"></div>
+            <div class="track-card-footer">
+              <div>
+                <h3>UI/UX & Product Design</h3>
+                <p>User Research, Wireframes & Interactive Prototypes</p>
+              </div>
+              <a href="courses.html" class="track-arrow-circle" title="View UI/UX Track" aria-label="View UI/UX">↗</a>
+            </div>
+          </article>
+
+          <!-- Card 5: Modern JavaScript & Frontend -->
+          <article class="track-card">
+            <img src="images/course-javascript.jpg" alt="Modern JavaScript Programming">
+            <div class="track-card-overlay"></div>
+            <div class="track-card-footer">
+              <div>
+                <h3>Modern JavaScript</h3>
+                <p>DOM Architecture, ES6+ & Dynamic Web Apps</p>
+              </div>
+              <a href="courses.html" class="track-arrow-circle" title="View JavaScript Track" aria-label="View JavaScript">↗</a>
+            </div>
+          </article>
+
+          <!-- Card 6: SIWES Industrial Attachment -->
+          <article class="track-card">
+            <img src="images/course-siwes.jpg" alt="SIWES Industrial Training Attachment">
+            <div class="track-card-overlay"></div>
+            <div class="track-card-footer">
+              <div>
+                <h3>SIWES Attachment</h3>
+                <p>3 to 6-Month Accredited University Placement</p>
+              </div>
+              <a href="courses.html" class="track-arrow-circle" title="View SIWES Program" aria-label="View SIWES">↗</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         8. NEW SECTION: METHODOLOGY BENTO GRID (The Skillerville Standard)
+         4 distinct cards highlighting why trainees choose Skillerville.
+         ===================================================================== -->
+    <section class="methodology-section" id="methodology" aria-label="Methodology">
+      <div class="container">
+        <div class="section-head-split" style="margin-bottom: 30px;">
+          <div class="section-head-left">
+            <span class="pill-badge">Our Educational Philosophy</span>
+            <h2>The Skillerville Standard</h2>
+          </div>
+          <div class="section-head-right">
+            <p>Every program is crafted around intense practical laboratory execution rather than rote memorization or surface concepts.</p>
+          </div>
+        </div>
+
+        <div class="method-grid">
+          <!-- Pillar 1 -->
+          <div class="method-card">
+            <div>
+              <div class="method-card-number">Pillar 01</div>
+              <h3>100% Practical Labs</h3>
+            </div>
+            <p>Trainees code live in the editor, inspect network packets in Wireshark, and execute market charts from day one.</p>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="method-card">
+            <div>
+              <div class="method-card-number">Pillar 02</div>
+              <h3>Direct Code Reviews</h3>
+            </div>
+            <p>Instructors provide line-by-line constructive critiques on every script, database schema, and project submission.</p>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="method-card">
+            <div>
+              <div class="method-card-number">Pillar 03</div>
+              <h3>SIWES Logbook Support</h3>
+            </div>
+            <p>Fully compliant with ITF and institutional guidelines. Weekly logbook sign-offs and guided defense mock trials.</p>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="method-card">
+            <div>
+              <div class="method-card-number">Pillar 04</div>
+              <h3>Industry Workstations</h3>
+            </div>
+            <p>Modern development machines, offline documentation, local testing servers, and uninterrupted power supply in Port Harcourt.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         9. NEW SECTION: TRAINEE ROADMAP (4-Step Progression Pipeline)
+         Clear step-by-step path from first registration to graduation.
+         ===================================================================== -->
+    <section class="roadmap-section" aria-label="Trainee Learning Roadmap">
+      <div class="container">
+        <div class="roadmap-header">
+          <span class="pill-badge">Clear Step-by-Step Pathway</span>
+          <h2>The Trainee Journey</h2>
+          <p>A proven structured pipeline engineered to take you from foundational basics to defending live technical capstones with confidence.</p>
+        </div>
+
+        <div class="roadmap-timeline-grid">
+          <!-- Step 1 -->
+          <div class="roadmap-step-card">
+            <span class="step-num-badge">Step 01</span>
+            <h3>Lab Setup & Fundamentals</h3>
+            <p>Configure developer environments, terminal commands, version control, and core computational syntax.</p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="roadmap-step-card">
+            <span class="step-num-badge">Step 02</span>
+            <h3>Deep Dive Engineering</h3>
+            <p>Execute guided lab assignments, responsive layouts, defensive protocols, or financial market indicators.</p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="roadmap-step-card">
+            <span class="step-num-badge">Step 03</span>
+            <h3>Capstone Building</h3>
+            <p>Construct a standalone, production-ready project independently to prove mastery of your chosen track.</p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="roadmap-step-card">
+            <span class="step-num-badge">Step 04</span>
+            <h3>Defense & Certification</h3>
+            <p>Defend your code architecture before instructors, complete SIWES evaluation, and earn official certification.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         10. NEW SECTION: VOICES OF SKILLERVILLE (Student & Intern Testimonials)
+         Minimalist editorial quotes showcasing genuine trainee growth.
+         ===================================================================== -->
+    <section class="testimonials-section" aria-label="Trainee Testimonials">
+      <div class="container">
+        <div class="section-head-split">
+          <div class="section-head-left">
+            <span class="pill-badge">Proven Outcomes</span>
+            <h2>Voices of Skillerville</h2>
+          </div>
+          <div class="section-head-right">
+            <p>Read reflections from students and SIWES interns who advanced their technical careers through our Port Harcourt academy.</p>
+          </div>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 (Replace 'images/testimonial-1.jpg' with your student photo anytime) -->
+          <article class="testimonial-card">
+            <p class="testimonial-quote">"Skillerville gave me the confidence to defend my SIWES presentation with zero anxiety. The hands-on web development practice was 100 times deeper than classroom theory alone."</p>
+            <div class="testimonial-author">
+              <img src="images/testimonial-1.jpg" alt="Chinedu O. - SIWES Intern" class="author-avatar-img">
+              <div class="author-info">
+                <h4>Chinedu O.</h4>
+                <p>SIWES Intern • Computer Science</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Testimonial 2 (Replace 'images/testimonial-2.jpg' with your student photo anytime) -->
+          <article class="testimonial-card">
+            <p class="testimonial-quote">"The cyber defense modules covered realistic threat detection and system auditing. The instructors actually sit with you and explain the 'why' behind every configuration."</p>
+            <div class="testimonial-author">
+              <img src="images/testimonial-2.jpg" alt="Blessing A. - Cyber Security Trainee" class="author-avatar-img">
+              <div class="author-info">
+                <h4>Blessing A.</h4>
+                <p>Cyber Security Trainee</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Testimonial 3 (Replace 'images/testimonial-3.jpg' with your student photo anytime) -->
+          <article class="testimonial-card">
+            <p class="testimonial-quote">"Learning financial market analysis here transformed how I manage risk. The discipline and chart reading strategies are grounded in real practical math, not hype."</p>
+            <div class="testimonial-author">
+              <img src="images/testimonial-3.jpg" alt="Tari E. - Financial Trading Graduate" class="author-avatar-img">
+              <div class="author-info">
+                <h4>Tari E.</h4>
+                <p>Financial Trading Graduate</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         11. NEW SECTION: DEFENSE FAQ (Pure CSS Semantic Accordion)
+         Demonstrates HTML5 <details> and CSS styling with zero JavaScript.
+         ===================================================================== -->
+    <section class="faq-section" aria-label="Frequently Asked Questions">
+      <div class="container">
+        <div class="faq-grid">
+          <div class="faq-left">
+            <span class="pill-badge">Common Inquiries</span>
+            <h2>Frequently Asked Questions</h2>
+            <p>Have questions about program schedules, SIWES logbook verification, or defense requirements? Here are direct answers.</p>
+            <a href="contact.html" class="btn btn-outline-dark">Ask a Question →</a>
+          </div>
+
+          <div class="faq-accordion">
+            <!-- FAQ 1 -->
+            <details class="faq-item" open>
+              <summary>How does the SIWES industrial attachment program operate?</summary>
+              <div class="faq-content">
+                <p>We accept university and polytechnic students for 3-month and 6-month SIWES attachments. Interns receive dedicated workstation access, weekly logbook sign-offs, structured real-world projects, and defense coaching.</p>
+              </div>
+            </details>
+
+            <!-- FAQ 2 -->
+            <details class="faq-item">
+              <summary>Do I need prior coding or technical background to enroll?</summary>
+              <div class="faq-content">
+                <p>No prior background is required. We start with foundational computing concepts, operating system navigation, and step-by-step logic before advancing to high-level engineering modules.</p>
+              </div>
+            </details>
+
+            <!-- FAQ 3 -->
+            <details class="faq-item">
+              <summary>Are programs conducted on-site or remotely?</summary>
+              <div class="faq-content">
+                <p>All core courses and SIWES attachments are conducted primarily on-site at our physical hub in Port Harcourt, Rivers State to guarantee hands-on lab access, stable power, and live instructor guidance.</p>
+              </div>
+            </details>
+
+            <!-- FAQ 4 -->
+            <details class="faq-item">
+              <summary>What credential do I receive upon track completion?</summary>
+              <div class="faq-content">
+                <p>Upon successfully defending your final capstone project, you receive an official Certificate of Competency from Skillerville Enterprise, along with fully endorsed ITF SIWES documentation.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =======================================================================
+       12. DARK FOOTER SECTION (Aligned with Poliform Reference Style)
+       Split row: "Engage with Us in Conversation.", hub photo, links grid,
+       and giant "Skillerville" typography aligned bottom-right.
+       ======================================================================= -->
+  <footer class="dark-footer-section" aria-label="Site Footer">
+    <div class="container">
+      
+      <!-- Top Split Row: "Engage with Us in Conversation." -->
+      <div class="footer-top-row">
+        <div class="footer-top-left">
+          <h2>Engage with Us in Conversation.</h2>
+          <p>In a digital world anchored in continuous innovation, real competence is built through hands-on practice and purposeful mentorship. Meeting ambitious minds and turning enthusiasm into skill is our daily mission.</p>
+          <a href="contact.html" class="btn btn-white">Start Your Journey →</a>
+        </div>
+        <div class="footer-top-right">
+          <img src="images/consultation-bg.jpg" alt="Skillerville training hub workspace">
+        </div>
+      </div>
+
+      <!-- Footer Columns & Giant Brand Typography -->
+      <div class="footer-links-grid">
+        <!-- Col 1: About Links -->
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="about.html">Hub Facility</a></li>
+            <li><a href="about.html">SIWES Accreditation</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 2: Academic Tracks -->
+        <div class="footer-col">
+          <h4>Academic Tracks</h4>
+          <ul>
+            <li><a href="courses.html">Full-Stack Web</a></li>
+            <li><a href="courses.html">Cyber Security</a></li>
+            <li><a href="courses.html">Financial Trading</a></li>
+            <li><a href="courses.html">UI/UX Design</a></li>
+            <li><a href="courses.html">SIWES Attachment</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Hub Details -->
+        <div class="footer-col">
+          <h4>Hub Location</h4>
+          <ul>
+            <li><span>Port Harcourt, Rivers State</span></li>
+            <li><span>Skillerville Enterprise Hub</span></li>
+            <li><span>Mon – Fri: 9:00am – 5:00pm</span></li>
+            <li><a href="contact.html">Inquiries & Admissions</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Giant Brand Name (Matching Reference "Poliform") -->
+        <div class="footer-giant-brand">
+          <h2>Skillerville</h2>
+        </div>
+      </div>
+
+      <!-- Bottom Bar: Copyright & Defense Notice -->
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 Skillerville Techspot / Skillerville Enterprise. All rights reserved.</div>
+        <div>Engineered with Pure CSS3 for IT / SIWES Web Development Defense</div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Vanilla JavaScript Controller (Only for mobile toggle & forms) -->
+  <script src="script.js"></script>
+</body>
+</html>

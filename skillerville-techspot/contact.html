@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Skillerville Techspot - Inquiries & Enrollment</title>
+  <link rel="icon" type="image/jpeg" href="images/favicon.jpg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <aside class="top-bar" aria-label="Announcement">
+    <div class="container" style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+      <span class="status-dot"></span>
+      <span><strong>Inquiries Desk Open:</strong> Admissions, SIWES Logbook Submissions & Enterprise Consultations (Port Harcourt)</span>
+    </div>
+  </aside>
+
+  <!-- Sticky Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="index.html" class="brand-logo" aria-label="Skillerville Home">
+          <img src="images/skillerville-logo.jpg" alt="Skillerville Logo">
+          <div class="brand-logo-text">
+            <span>Skillerville</span>
+            <small>Techspot • Enterprise</small>
+          </div>
+        </a>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Tracks</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="index.html#methodology">Methodology</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+
+        <div class="nav-right-btn">
+          <a href="contact.html" class="btn btn-black">Enroll Now</a>
+          <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation">☰</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Hero Banner -->
+    <section class="inner-page-banner">
+      <div class="container">
+        <span class="pill-badge pill-badge-live" style="margin-bottom: 12px;">
+          <span class="status-dot"></span> Connect With Us
+        </span>
+        <h1>Contact Skillerville Techspot</h1>
+        <p>Send an enrollment inquiry, schedule a facility visit, register for your SIWES attachment, or discuss bespoke software engineering with our team in Port Harcourt.</p>
+      </div>
+    </section>
+
+    <!-- 2. Main Contact Grid (Details & Form) -->
+    <section class="container">
+      <div class="contact-container-grid">
+        
+        <!-- Info Column -->
+        <div class="contact-info-card">
+          <span class="pill-badge">Direct Inquiries</span>
+          <h2 style="font-size: 26px; margin-bottom: 14px;">We'd Love to Meet You</h2>
+          <p style="margin-bottom: 25px; font-size: 14.5px; line-height: 1.65;">Whether you are stepping into coding for the first time, securing enterprise systems, analyzing market charts, or seeking an accredited SIWES placement, our doors are open.</p>
+
+          <div class="contact-detail">
+            <h4>Physical Hub Location</h4>
+            <p>Skillerville Enterprise Hub, Port Harcourt, Rivers State, Nigeria.</p>
+          </div>
+
+          <div class="contact-detail">
+            <h4>Email Communications</h4>
+            <p>info@skillerville.example • admissions@skillerville.example</p>
+          </div>
+
+          <div class="contact-detail">
+            <h4>Phone / WhatsApp Hotlines</h4>
+            <p>+234 (0) 803 000 0000 • +234 (0) 812 000 0000</p>
+          </div>
+
+          <div class="contact-detail">
+            <h4>Operating Schedule</h4>
+            <p>Monday – Friday: 9:00 AM – 5:00 PM<br>Saturday: Cohort Practicals & SIWES Defense</p>
+          </div>
+        </div>
+
+        <!-- Form Column -->
+        <div class="contact-form-card">
+          <h2 style="font-size: 26px; margin-bottom: 10px;">Send Us a Message</h2>
+          <p style="font-size: 14px; color: var(--color-text-muted); margin-bottom: 22px;">Fill in your details below and our admissions coordinator will respond within 24 hours.</p>
+
+          <form id="contactForm" onsubmit="return validateContactForm(event)">
+            <div class="form-group">
+              <label for="fullName">Full Name *</label>
+              <input type="text" id="fullName" placeholder="e.g. Samuel K. Briggs" required>
+            </div>
+
+            <div class="form-group">
+              <label for="emailAddress">Email Address *</label>
+              <input type="email" id="emailAddress" placeholder="e.g. samuel.briggs@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="trackSelect">Program or Service of Interest *</label>
+              <select id="trackSelect" required>
+                <option value="">-- Select Your Desired Track or Service --</option>
+                <option value="Frontend Web Development">Frontend Web Development (HTML5, CSS3 & JavaScript)</option>
+                <option value="Full-Stack Engineering">Full-Stack Web Engineering (Frontend, Backend & DB)</option>
+                <option value="Cyber Security & Defense">Cyber Security, Network Defense & Auditing</option>
+                <option value="Financial Market Trading">Financial Market Trading (Forex, Crypto & Charts)</option>
+                <option value="SIWES Industrial Attachment">SIWES Industrial Attachment (3 to 6 Months)</option>
+                <option value="Computer Basics & Office">Computer Basics & Microsoft Office Suite</option>
+                <option value="Custom Software Development">Custom Software Development (Enterprise Client)</option>
+                <option value="Corporate Staff Training">Corporate Staff Training Workshop</option>
+                <option value="General Inquiry">General Question / Physical Visit</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="messageText">Your Message or Learning Goal *</label>
+              <textarea id="messageText" placeholder="Tell us about your educational background, preferred cohort time, or project requirements..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-black" style="width: 100%; padding: 14px; font-size: 14px;">Submit Inquiry →</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. NEW SECTION: Visiting Hours & Cohort Schedules -->
+    <section class="methodology-section" style="padding-bottom: 60px;">
+      <div class="container">
+        <div class="section-head-split">
+          <div class="section-head-left">
+            <span class="pill-badge">Visitor Guidelines</span>
+            <h2>Hub Visiting & Consultation Hours</h2>
+          </div>
+          <div class="section-head-right">
+            <p>Plan your visit to tour our lab workstations, inspect physical facilities, and speak with course instructors.</p>
+          </div>
+        </div>
+
+        <div class="visiting-grid">
+          <div class="visiting-card">
+            <h3>Weekday Inquiries</h3>
+            <p><strong>Mon – Fri: 9:00 AM – 4:30 PM</strong></p>
+            <p style="margin-top: 10px; font-size: 13.5px; color: var(--color-text-body);">Walk-in admissions consultations, facility walk-throughs, and tuition fee payments.</p>
+          </div>
+
+          <div class="visiting-card">
+            <h3>SIWES Logbook Submissions</h3>
+            <p><strong>Tuesdays & Thursdays: 10:00 AM – 2:00 PM</strong></p>
+            <p style="margin-top: 10px; font-size: 13.5px; color: var(--color-text-body);">Dedicated hours for weekly industrial supervisor logbook signatures, progress review, and assessment updates.</p>
+          </div>
+
+          <div class="visiting-card">
+            <h3>Weekend Executive Cohort</h3>
+            <p><strong>Saturdays: 10:00 AM – 4:00 PM</strong></p>
+            <p style="margin-top: 10px; font-size: 13.5px; color: var(--color-text-body);">Intensive sessions for working professionals, project capstone presentations, and technical mock defenses.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. NEW SECTION: Transport & Port Harcourt Landmark Directions -->
+    <section class="container" style="margin-bottom: 70px;">
+      <div class="landmarks-box">
+        <div>
+          <span class="pill-badge">Easy Navigation</span>
+          <h2 style="font-size: 30px; margin-bottom: 14px;">Getting to Our Tech Hub</h2>
+          <p style="font-size: 15px; line-height: 1.7; margin-bottom: 16px;">Skillerville Enterprise is strategically situated in Port Harcourt, accessible via major transportation arteries, ride-hailing services (Bolt, Uber), and public transit.</p>
+          <p style="font-size: 14px; line-height: 1.6; color: #555;">Ample visitor parking is provided inside the premises with 24-hour security personnel. When arriving, ask for the Skillerville Techspot Admissions Reception on the Ground Floor.</p>
+        </div>
+        <div style="background-color: var(--color-black); color: #ffffff; padding: 30px; border-radius: var(--radius-lg);">
+          <h3 style="color: #ffffff; font-size: 20px; margin-bottom: 12px;">Fast Directions Checklist</h3>
+          <p style="font-size: 13.5px; color: #ccc; margin-bottom: 8px;">✓ Central access in Port Harcourt metropolis</p>
+          <p style="font-size: 13.5px; color: #ccc; margin-bottom: 8px;">✓ 5-minute walk from major bus stops</p>
+          <p style="font-size: 13.5px; color: #ccc; margin-bottom: 8px;">✓ Air-conditioned labs with uninterrupted power</p>
+          <p style="font-size: 13.5px; color: #ccc;">✓ Secure gated premises & visitor check-in</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Dark Architectural Footer (Poliform Reference Style) -->
+  <footer class="dark-footer-section" aria-label="Site Footer">
+    <div class="container">
+      <div class="footer-top-row">
+        <div class="footer-top-left">
+          <h2>Engage with Us in Conversation.</h2>
+          <p>Join an energetic, supportive tech ecosystem right in the heart of Port Harcourt. Submit your application or reach out today.</p>
+          <a href="#contactForm" class="btn btn-white">Fill Contact Form ↑</a>
+        </div>
+        <div class="footer-top-right">
+          <img src="images/consultation-bg.jpg" alt="Skillerville training facility">
+        </div>
+      </div>
+
+      <div class="footer-links-grid">
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="about.html">Hub Facility</a></li>
+            <li><a href="about.html">SIWES Accreditation</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Academic Tracks</h4>
+          <ul>
+            <li><a href="courses.html">Full-Stack Web</a></li>
+            <li><a href="courses.html">Cyber Security</a></li>
+            <li><a href="courses.html">Financial Trading</a></li>
+            <li><a href="courses.html">UI/UX Design</a></li>
+            <li><a href="courses.html">SIWES Attachment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Hub Location</h4>
+          <ul>
+            <li><span>Port Harcourt, Rivers State</span></li>
+            <li><span>Skillerville Enterprise Hub</span></li>
+            <li><span>Mon – Fri: 9:00am – 5:00pm</span></li>
+            <li><a href="contact.html">Inquiries & Admissions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-giant-brand">
+          <h2>Skillerville</h2>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 Skillerville Techspot / Skillerville Enterprise. All rights reserved.</div>
+        <div>Engineered with Pure CSS3 for IT / SIWES Web Development Defense</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

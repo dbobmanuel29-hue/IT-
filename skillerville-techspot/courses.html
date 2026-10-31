@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses & Training Programs - Skillerville Techspot</title>
+  <link rel="icon" type="image/jpeg" href="images/favicon.jpg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="top-bar" aria-label="Announcement">
+    <div class="container" style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+      <span class="status-dot"></span>
+      <span><strong>Admissions Open:</strong> Morning, Afternoon & Weekend Cohorts Enrolling in Port Harcourt</span>
+    </div>
+  </aside>
+
+  <!-- Sticky Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="index.html" class="brand-logo" aria-label="Skillerville Home">
+          <img src="images/skillerville-logo.jpg" alt="Skillerville Logo">
+          <div class="brand-logo-text">
+            <span>Skillerville</span>
+            <small>Techspot • Enterprise</small>
+          </div>
+        </a>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html" class="active">Tracks</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="index.html#methodology">Methodology</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-right-btn">
+          <a href="contact.html" class="btn btn-black">Enroll Now</a>
+          <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation">☰</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Hero Banner -->
+    <section class="inner-page-banner">
+      <div class="container">
+        <span class="pill-badge pill-badge-live" style="margin-bottom: 12px;">
+          <span class="status-dot"></span> Practical Academic Tracks
+        </span>
+        <h1>Explore Our Training Tracks</h1>
+        <p>Comprehensive engineering programs in Web Development, Cyber Defense, Quantitative Financial Trading, Computer Literacy, and Institutional SIWES Attachment.</p>
+      </div>
+    </section>
+
+    <!-- 2. Live Search Filter -->
+    <div class="container">
+      <div class="course-search-box">
+        <span style="font-weight: 700; font-size: 13.5px; text-transform: uppercase; letter-spacing: 0.05em; color: #111;">Filter:</span>
+        <input 
+          type="text" 
+          id="trackSearchInput" 
+          onkeyup="searchTracks()" 
+          placeholder="Search tracks by keyword (e.g. Frontend, Cyber, Trading, JavaScript, SIWES, Git)..."
+          aria-label="Filter courses"
+        >
+      </div>
+    </div>
+
+    <!-- 3. Curated Courses & Specialized Tracks Grid (9 Cards) -->
+    <section class="tracks-section" style="padding-bottom: 70px;">
+      <div class="container">
+        <div class="tracks-grid">
+          
+          <!-- Track 1: Frontend Web Engineering -->
+          <article class="track-card">
+            <img src="images/course-frontend.jpg" alt="Frontend Web Engineering">
+            <div class="track-card-overlay"></div>
+            <div class="track-card-footer">
+              <div>
+                <h3>Frontend Web Engineering</h3>
+                <p>HTML5, Modern CSS3, Flexbox & Responsive Layouts</p>
+              </div>
+              <a href="contact.html" class="track-arrow-circle" title="Enroll in Frontend">↗</a>
+            </div>
+          </article>
+
+          <!-- Track 2: Cyber Security & Ethical Defense -->
+          <article class="track-card">
+            <img src="images/course-cybersecurity.jpg" alt="Cyber Security and Network Defense">
+            <div class="track-card-overlay"></div>
+            <div class="track-card-footer">
+              <div>
+                <h3>Cyber Security & Defense</h3>
+                <p>Network Defense, Wireshark & Threat Auditing</p>
+              </div>
+              <a href="contact.html" class="track-arrow-circle" title="Enroll in Cyber Security">↗</a>
+            </div>
+          </article>
+
+          <!-- Track 3: Financial Market Trading -->
+          <article class="track-card">
+            <img src="images/course-trading.jpg" alt="Financial Market Trading">
+            <div class="track-card-overlay"></div>
+            <div class="track-card-footer">
+              <div>
+                <h3>Financial Market Trading</h3>
+                <p>Forex, Crypto, Technical Analysis & Capital Risk</p>
+              </div>
+              <a href="contact.html" class="track-arrow-circle" title="Enroll in Trading">↗</a>
+            </div>
+          </article>
+
+          <!-- Track 4: Computer Basics & Productivity -->
+          <article class="track-card">
+            <img src="images/course-basics.jpg" alt="Computer Basics & Productivity">
+            <div class="track-card-overlay"></div>
+            <div class="track-card-footer">
+              <div>
+                <h3>Computer Basics & Office Suite</h3>
+                <p>Operating Systems, MS Word, Excel, PowerPoint</p>
+              </div>
+              <a href="contact.html" class="track-arrow-circle" title="Enroll in Computer Basics">↗</a>
+            </div>
+          </article>
+
+          <!-- Track 5: SIWES Industrial Attachment -->
+          <article class="track-card">
+            <img src="images/course-siwes.jpg" alt="SIWES Industrial Training Attachment">
+            <div class="track-card-overlay"></div>
+            <div class="track-card-footer">
+              <div>
+                <h3>SIWES Industrial Attachment</h3>
+                <p>3 to 6-Month Placement, Logbooks & Mock Defense</p>
+              </div>
+              <a href="contact.html" class="track-arrow-circle" title="Apply for SIWES">↗</a>
+            </div>
+          </article>
+
+          <!-- Track 6: Vanilla JavaScript Engineering -->
+          <article class="track-card">
+            <img src="images/course-javascript.jpg" alt="Vanilla JavaScript Engineering">
+            <div class="track-card-overlay"></div>
+            <div class="track-card-footer">
+              <div>
+                <h3>Modern JavaScript</h3>
+                <p>DOM Manipulation, ES6+ Syntax, Events & Logic</p>
+              </div>
+              <a href="contact.html" class="track-arrow-circle" title="Enroll in JavaScript">↗</a>
+            </div>
+          </article>
+
+          <!-- Track 7: UI/UX & Responsive Web Design -->
+          <article class="track-card">
+            <img src="images/course-design.jpg" alt="Responsive Web & UI/UX Design">
+            <div class="track-card-overlay"></div>
+            <div class="track-card-footer">
+              <div>
+                <h3>UI/UX & Product Design</h3>
+                <p>Design Hierarchy, Wireframing & Prototyping</p>
+              </div>
+              <a href="contact.html" class="track-arrow-circle" title="Enroll in UI/UX">↗</a>
+            </div>
+          </article>
+
+          <!-- Track 8: Full-Stack Fundamentals -->
+          <article class="track-card">
+            <img src="images/course-fullstack.jpg" alt="Full-Stack Web Development">
+            <div class="track-card-overlay"></div>
+            <div class="track-card-footer">
+              <div>
+                <h3>Full-Stack Engineering</h3>
+                <p>Server Architecture, SQL Databases & Web Hosting</p>
+              </div>
+              <a href="contact.html" class="track-arrow-circle" title="Enroll in Full-Stack">↗</a>
+            </div>
+          </article>
+
+          <!-- Track 9: Git & Developer Tools -->
+          <article class="track-card">
+            <img src="images/course-tools.jpg" alt="Git and Developer Version Control">
+            <div class="track-card-overlay"></div>
+            <div class="track-card-footer">
+              <div>
+                <h3>Git & Developer Tooling</h3>
+                <p>Terminal Commands, Version Control & GitHub</p>
+              </div>
+              <a href="contact.html" class="track-arrow-circle" title="Enroll in Tools">↗</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. NEW SECTION: Cohort Timetables & Batch Schedules -->
+    <section class="methodology-section" style="padding-bottom: 70px;">
+      <div class="container">
+        <div class="section-head-split">
+          <div class="section-head-left">
+            <span class="pill-badge">Flexible Learning Schedules</span>
+            <h2>Cohort Intake Options</h2>
+          </div>
+          <div class="section-head-right">
+            <p>Choose an attendance schedule that fits your university timetable, work hours, or personal availability.</p>
+          </div>
+        </div>
+
+        <div class="cohort-grid">
+          <!-- Cohort 1 -->
+          <div class="cohort-card">
+            <span class="cohort-time">Morning Batch (9:00 AM – 12:00 PM)</span>
+            <h3>Full-Time Immersion</h3>
+            <p>Designed for SIWES interns and graduates pursuing dedicated intensive hands-on development.</p>
+            <ul>
+              <li>Monday through Thursday classes</li>
+              <li>Dedicated workstation in physical lab</li>
+              <li>Daily instructor code reviews</li>
+              <li>Weekly lab assessments & milestones</li>
+            </ul>
+            <a href="contact.html" class="btn btn-black" style="margin-top: 20px;">Join Morning Batch →</a>
+          </div>
+
+          <!-- Cohort 2 -->
+          <div class="cohort-card">
+            <span class="cohort-time">Afternoon Batch (1:00 PM – 4:00 PM)</span>
+            <h3>Afternoon Acceleration</h3>
+            <p>Ideal for university students combining academic lectures with practical afternoon lab sessions.</p>
+            <ul>
+              <li>Monday through Thursday classes</li>
+              <li>Supervised programming practicals</li>
+              <li>Collaborative team project pairing</li>
+              <li>Logbook verification & feedback</li>
+            </ul>
+            <a href="contact.html" class="btn btn-black" style="margin-top: 20px;">Join Afternoon Batch →</a>
+          </div>
+
+          <!-- Cohort 3 -->
+          <div class="cohort-card">
+            <span class="cohort-time">Weekend Executive (Saturdays 10:00 AM – 4:00 PM)</span>
+            <h3>Working Professional</h3>
+            <p>Structured for employed professionals, executives, and business owners upskilling on weekends.</p>
+            <ul>
+              <li>Intensive Saturday double-sessions</li>
+              <li>Self-paced weekly project assignments</li>
+              <li>Direct remote mentor support via chat</li>
+              <li>Capstone defense presentation</li>
+            </ul>
+            <a href="contact.html" class="btn btn-black" style="margin-top: 20px;">Join Weekend Batch →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. NEW SECTION: Program Comparison Matrix -->
+    <section class="tracks-section" style="padding-bottom: 70px;">
+      <div class="container">
+        <div class="section-head-split">
+          <div class="section-head-left">
+            <span class="pill-badge">Curriculum Overview</span>
+            <h2>Program Comparison Matrix</h2>
+          </div>
+          <div class="section-head-right">
+            <p>Review duration, prerequisite expectations, and capstone requirements across our primary training tracks.</p>
+          </div>
+        </div>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Training Track</th>
+                <th>Standard Duration</th>
+                <th>Level</th>
+                <th>Core Practical Capstone</th>
+                <th>Awarded Credential</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Frontend Web Development</strong></td>
+                <td>12 Weeks</td>
+                <td>Beginner to Intermediate</td>
+                <td>Interactive Multi-Page Responsive Web Application</td>
+                <td>Certificate of Competency</td>
+              </tr>
+              <tr>
+                <td><strong>Full-Stack Engineering</strong></td>
+                <td>24 Weeks</td>
+                <td>Intermediate to Advanced</td>
+                <td>End-to-End Database-Driven Web System</td>
+                <td>Diploma of Software Engineering</td>
+              </tr>
+              <tr>
+                <td><strong>Cyber Security & Defense</strong></td>
+                <td>16 Weeks</td>
+                <td>Intermediate</td>
+                <td>Network Vulnerability Audit & Defense Report</td>
+                <td>Certificate of Cyber Defense</td>
+              </tr>
+              <tr>
+                <td><strong>Financial Market Trading</strong></td>
+                <td>8 Weeks</td>
+                <td>All Levels</td>
+                <td>Live Execution & Risk Management Journal</td>
+                <td>Trading Competency Certificate</td>
+              </tr>
+              <tr>
+                <td><strong>SIWES Attachment Hub</strong></td>
+                <td>12 to 24 Weeks</td>
+                <td>Undergraduate</td>
+                <td>Institutionally Defended Software/Security System</td>
+                <td>ITF Endorsed SIWES Clearance</td>
+              </tr>
+              <tr>
+                <td><strong>Computer Literacy & Office</strong></td>
+                <td>6 Weeks</td>
+                <td>Foundational</td>
+                <td>Executive Spreadsheet, Document & Presentation Portfolio</td>
+                <td>Certificate in Computing</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. NEW SECTION: Student Capstone Defense Protocol -->
+    <section class="container" style="margin-bottom: 70px;">
+      <div class="split-feature-box">
+        <div class="split-feature-text">
+          <span class="pill-badge">Academic & Technical Rigor</span>
+          <h2>The Capstone Defense Standard</h2>
+          <p>At Skillerville Techspot, certificates are not handed out for mere attendance. Every trainee must complete and orally defend a standalone, real-world project before a panel of technical instructors.</p>
+          <p>Trainees are questioned on code structure, algorithmic decisions, security configurations, and responsive CSS choices. This simulates industrial job interviews and academic SIWES defense boards, ensuring 100% confidence.</p>
+          <a href="contact.html" class="btn btn-black">Enroll & Begin Training →</a>
+        </div>
+        <div class="split-feature-img">
+          <img src="images/spotlight-1.jpg" alt="Student defending technical project">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Dark Architectural Footer (Poliform Reference Style) -->
+  <footer class="dark-footer-section" aria-label="Site Footer">
+    <div class="container">
+      <div class="footer-top-row">
+        <div class="footer-top-left">
+          <h2>Engage with Us in Conversation.</h2>
+          <p>Ready to master real technology? Speak directly with our admissions and training advisors to select the right track for your career.</p>
+          <a href="contact.html" class="btn btn-white">Apply for Admission →</a>
+        </div>
+        <div class="footer-top-right">
+          <img src="images/consultation-bg.jpg" alt="Skillerville training facility">
+        </div>
+      </div>
+
+      <div class="footer-links-grid">
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="about.html">Hub Facility</a></li>
+            <li><a href="about.html">SIWES Accreditation</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Academic Tracks</h4>
+          <ul>
+            <li><a href="courses.html">Full-Stack Web</a></li>
+            <li><a href="courses.html">Cyber Security</a></li>
+            <li><a href="courses.html">Financial Trading</a></li>
+            <li><a href="courses.html">UI/UX Design</a></li>
+            <li><a href="courses.html">SIWES Attachment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Hub Location</h4>
+          <ul>
+            <li><span>Port Harcourt, Rivers State</span></li>
+            <li><span>Skillerville Enterprise Hub</span></li>
+            <li><span>Mon – Fri: 9:00am – 5:00pm</span></li>
+            <li><a href="contact.html">Inquiries & Admissions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-giant-brand">
+          <h2>Skillerville</h2>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 Skillerville Techspot / Skillerville Enterprise. All rights reserved.</div>
+        <div>Engineered with Pure CSS3 for IT / SIWES Web Development Defense</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
