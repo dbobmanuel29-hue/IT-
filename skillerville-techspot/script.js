@@ -15,6 +15,7 @@
     menu.classList.toggle("show", open);
     button.setAttribute("aria-expanded", String(open));
     button.setAttribute("aria-label", open ? "Close navigation menu" : "Open navigation menu");
+    button.textContent = open ? "×" : "☰";
   }
 
   // The HTML menu button calls this function.
@@ -45,6 +46,7 @@
     if (menu && button) {
       button.setAttribute("aria-controls", "navMenu");
       button.setAttribute("aria-expanded", "false");
+      button.textContent = "☰";
 
       menu.querySelectorAll("a").forEach(function (link) {
         link.addEventListener("click", function () {
