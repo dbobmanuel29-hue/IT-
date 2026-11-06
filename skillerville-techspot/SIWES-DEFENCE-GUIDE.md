@@ -28,7 +28,7 @@ The header navigation connects the pages. The footer provides repeated navigatio
 - **Visual Studio Code:** code editor.
 - **Web browser:** displays and runs the website.
 
-This static portfolio does not need React, a package manager, database, external font, CSS library, image CDN or API. The pages use local images and a system-font stack.
+The pages use local images and a system-font stack. No package installation or external service is required to open the website.
 
 ## 4. Project folder structure
 
@@ -228,7 +228,7 @@ The stylesheet also uses CSS keyframes for selected visual animations. A keyfram
 
 ## 7. JavaScript — behaviour and interaction
 
-JavaScript is a programming language that adds behaviour to webpages. In this portfolio it is used for the mobile menu, project search and contact-form validation.
+JavaScript is a programming language that adds behaviour to webpages. In this portfolio it is used for the mobile menu and contact-form validation.
 
 ### Variables and functions
 
@@ -379,8 +379,8 @@ A: A common frontend challenge is making layouts work on different screen sizes 
 **Q: What did you learn during SIWES?**  
 A: I gained practical experience structuring webpages with HTML, styling them with CSS, adding interactions with JavaScript, organising project files and testing a website.
 
-**Q: What would you improve in the future?**  
-A: I would continue testing the website on different screen sizes and improve accessibility and code organisation.
+**Q: What would you check or improve in the website?**  
+A: I would test the website on different screen sizes, check accessibility and keep the code organised.
 
 ## 12. Short website demonstration plan
 
