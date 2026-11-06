@@ -1,4 +1,4 @@
-/* Skillerville Techspot — simple site interactions using vanilla JavaScript. */
+/* Bobmanuel's SIWES portfolio — simple interactions using vanilla JavaScript. */
 
 (function () {
   "use strict";
@@ -81,7 +81,7 @@
       return false;
     }
     if (!track) {
-      alert("Please select a program or service.");
+      alert("Please select a reason for contact.");
       trackField.focus();
       return false;
     }
@@ -98,38 +98,4 @@
     return false;
   };
 
-  // Search the project cards and announce how many match.
-  window.searchTracks = function () {
-    var searchInput = document.getElementById("trackSearchInput");
-    if (!searchInput) return;
-
-    var cards = document.querySelectorAll(".track-card");
-    var filter = searchInput.value.trim().toLocaleLowerCase();
-    var visibleCount = 0;
-
-    cards.forEach(function (card) {
-      var searchableText = (card.textContent || "").toLocaleLowerCase();
-      var matches = searchableText.indexOf(filter) !== -1;
-      card.hidden = !matches;
-      if (matches) visibleCount += 1;
-    });
-
-    var results = document.getElementById("trackSearchStatus");
-    if (!results) {
-      results = document.createElement("p");
-      results.id = "trackSearchStatus";
-      results.className = "search-status";
-      results.setAttribute("role", "status");
-      results.setAttribute("aria-live", "polite");
-
-      var searchBox = searchInput.closest(".course-search-box");
-      if (searchBox) searchBox.insertAdjacentElement("afterend", results);
-    }
-
-    if (results) {
-      results.textContent = visibleCount === 0
-        ? "No projects match your search. Try another keyword."
-        : "Showing " + visibleCount + (visibleCount === 1 ? " project." : " projects.");
-    }
-  };
 })();
