@@ -2276,3 +2276,294 @@ a:active, button:active, summary:active, [role="button"]:active {
 #contactForm button{cursor:pointer}
 .search-status{margin-top:12px;min-height:24px}
 @media(max-width:700px){.profile-photo-wrap{min-height:250px}.portfolio-hero .hero-big-title{font-size:clamp(32px,10vw,54px)}.site-footer{padding-top:42px}}
+
+
+/* --------------------------------------------------------------------------
+   22. MOBILE POLISH
+   Keep the navigation inside the screen and prevent touch highlight flashes.
+   These rules use basic CSS so they are easy to explain during SIWES defence.
+   -------------------------------------------------------------------------- */
+
+/* Hide the browser's coloured tap flash on touch devices.
+   Keyboard users still get a clear focus outline through :focus-visible. */
+html,
+body,
+a,
+button,
+input,
+select,
+textarea,
+summary {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Tablets and phones: use a compact header with a menu that stays in view. */
+@media (max-width: 900px) {
+  .navbar {
+    position: relative;
+    width: 100%;
+    min-height: 68px;
+    padding: 12px 0;
+    gap: 12px;
+  }
+
+  .brand-logo {
+    flex: 1 1 auto;
+    min-width: 0;
+    gap: 9px;
+  }
+
+  .brand-mark {
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+  }
+
+  .brand-logo-text {
+    min-width: 0;
+    font-size: clamp(16px, 3.8vw, 20px);
+  }
+
+  .brand-logo-text small {
+    font-size: 8px;
+    letter-spacing: 0.08em;
+  }
+
+  .nav-right-btn {
+    flex: 0 0 auto;
+    margin-left: auto;
+    gap: 0;
+  }
+
+  /* The large desktop button takes too much room on a phone. */
+  .nav-right-btn > .btn {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-size: 22px;
+    line-height: 1;
+  }
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: auto;
+    max-width: 100%;
+    margin: 0;
+    padding: 14px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    background: #ffffff;
+    border: 1px solid var(--color-border);
+    border-top: 0;
+    border-radius: 0 0 14px 14px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.09);
+    z-index: 1100;
+  }
+
+  .nav-menu.show {
+    display: flex;
+  }
+
+  .nav-menu li {
+    width: 100%;
+  }
+
+  .nav-menu li a {
+    display: block;
+    width: 100%;
+    padding: 11px 10px;
+    border-radius: 8px;
+  }
+
+  .nav-menu li a.active {
+    background: var(--color-bg-subtle);
+  }
+
+  .nav-menu li a::after {
+    display: none;
+  }
+
+  .page-hero-grid > *,
+  .split-feature-box > *,
+  .showcase-grid > *,
+  .showcase-col-right > * {
+    min-width: 0;
+  }
+}
+
+/* Narrow phones: reduce spacing and keep content within the viewport. */
+@media (max-width: 540px) {
+  .container {
+    width: calc(100% - 32px);
+    max-width: 100%;
+  }
+
+  .top-bar {
+    padding: 7px 12px;
+    font-size: 10px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+  }
+
+  .navbar {
+    min-height: 64px;
+    padding: 10px 0;
+  }
+
+  .brand-logo-text {
+    font-size: 17px;
+  }
+
+  .brand-logo-text small {
+    font-size: 7px;
+  }
+
+  .menu-toggle {
+    width: 42px;
+    height: 42px;
+    flex-basis: 42px;
+  }
+
+  .nav-menu {
+    padding: 12px;
+  }
+
+  .hero-section {
+    padding-top: 16px;
+  }
+
+  .hero-card {
+    min-height: 0;
+    border-radius: 16px;
+  }
+
+  .hero-title-wrap {
+    padding: 34px 16px 16px;
+  }
+
+  .hero-big-title,
+  .portfolio-hero .hero-big-title {
+    font-size: clamp(30px, 9vw, 44px);
+    overflow-wrap: anywhere;
+  }
+
+  .hero-lower-content {
+    padding: 20px;
+  }
+
+  .page-hero-text h1 {
+    font-size: clamp(28px, 8vw, 36px);
+    overflow-wrap: anywhere;
+  }
+
+  .editorial-page-hero {
+    padding: 34px 0;
+    margin-bottom: 30px;
+  }
+
+  .page-hero-grid {
+    gap: 24px;
+  }
+
+  .page-hero-photo-wrap {
+    height: auto;
+    min-height: 220px;
+  }
+
+  .profile-photo-wrap {
+    min-height: 220px;
+  }
+
+  .showcase-content-left,
+  .showcase-card-text {
+    padding: 22px 18px;
+  }
+
+  .split-feature-box {
+    padding: 20px;
+    gap: 22px;
+  }
+
+  .contact-container-grid {
+    padding: 18px;
+  }
+
+  .footer-links-grid {
+    gap: 26px;
+  }
+
+  .footer-bottom-bar {
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn {
+    white-space: normal;
+    text-align: center;
+  }
+}
+
+/* Very narrow screens (including 320px-wide phones). */
+@media (max-width: 360px) {
+  .container {
+    width: calc(100% - 24px);
+  }
+
+  .brand-logo {
+    gap: 7px;
+  }
+
+  .brand-mark {
+    width: 36px;
+    height: 36px;
+    flex-basis: 36px;
+    font-size: 19px;
+  }
+
+  .brand-logo-text {
+    font-size: 15px;
+  }
+
+  .brand-logo-text small {
+    font-size: 6.5px;
+    letter-spacing: 0.04em;
+  }
+
+  .menu-toggle {
+    width: 40px;
+    height: 40px;
+    flex-basis: 40px;
+  }
+
+  .hero-lower-content {
+    padding: 16px;
+  }
+
+  .hero-btn-row {
+    gap: 10px;
+  }
+
+  .value-card,
+  .method-card {
+    padding: 22px 18px;
+  }
+}
