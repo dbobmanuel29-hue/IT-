@@ -98,7 +98,7 @@
     return false;
   };
 
-  // Search the training cards and announce how many match.
+  // Search the project cards and announce how many match.
   window.searchTracks = function () {
     var searchInput = document.getElementById("trackSearchInput");
     if (!searchInput) return;
@@ -128,8 +128,8 @@
 
     if (results) {
       results.textContent = visibleCount === 0
-        ? "No training tracks match your search. Try another keyword."
-        : "Showing " + visibleCount + (visibleCount === 1 ? " training track." : " training tracks.");
+        ? "No projects match your search. Try another keyword."
+        : "Showing " + visibleCount + (visibleCount === 1 ? " project." : " projects.");
     }
   };
 })();
