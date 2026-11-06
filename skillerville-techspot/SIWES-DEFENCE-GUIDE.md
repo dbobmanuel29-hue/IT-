@@ -374,7 +374,7 @@ A: It keeps the project organised. HTML handles structure, CSS handles presentat
 A: It stores the visual files used by the pages locally, so the website does not need an external image service to display them.
 
 **Q: What challenge did you face?**  
-A: A common frontend challenge is making layouts work on different screen sizes and ensuring interactive features behave correctly. I addressed this by using responsive CSS and testing the navigation, search and form.
+A: A common frontend challenge is making layouts work on different screen sizes and ensuring interactive features behave correctly. I addressed this by using responsive CSS and testing the navigation and form.
 
 **Q: What did you learn during SIWES?**  
 A: I gained practical experience structuring webpages with HTML, styling them with CSS, adding interactions with JavaScript, organising project files and testing a website.
