@@ -2234,3 +2234,18 @@ img { max-width: 100%; }
     transition-duration: 0.01ms !important;
   }
 }
+
+
+/* Remove the default blue tap flash on touch devices while keeping
+   clear keyboard focus styles for accessibility. */
+a, button, input, select, textarea, summary, [role="button"] {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a, button, summary, [role="button"] {
+  touch-action: manipulation;
+}
+
+a:active, button:active, summary:active, [role="button"]:active {
+  -webkit-tap-highlight-color: transparent;
+}
