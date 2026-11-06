@@ -1,253 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Bobmanuel Portfolio</title>
-  <link rel="icon" type="image/jpeg" href="images/favicon.jpg">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <!-- Announcement Bar -->
-  <aside class="top-bar" aria-label="Announcement">
-    <div class="container" style="display: flex; align-items: center; justify-content: center; gap: 8px;">
-      <span class="status-dot"></span>
-      <span><strong>Inquiries Desk Open:</strong> Admissions, SIWES Logbook Submissions & Enterprise Consultations (Port Harcourt)</span>
-    </div>
-  </aside>
-
-  <!-- Sticky Header -->
-  <header class="site-header">
-    <div class="container">
-      <nav class="navbar" aria-label="Main Navigation">
-        <a href="index.html" class="brand-logo" aria-label="Bobmanuel Home">
-          <img src="images/skillerville-logo.jpg" alt="Bobmanuel Logo">
-          <div class="brand-logo-text">
-            <span>Bobmanuel</span>
-            <small>Computer Science Student & Web Developer</small>
-          </div>
-        </a>
-
-        <ul class="nav-menu" id="navMenu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="courses.html">Projects</a></li>
-          <li><a href="services.html">Skills</a></li>
-          <li><a href="index.html#methodology">My Approach</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-
-        <div class="nav-right-btn">
-          <a href="contact.html" class="btn btn-black">View My Work</a>
-          <button type="button" class="menu-toggle" onclick="toggleMenu()" aria-controls="navMenu" aria-expanded="false" aria-label="Open navigation menu">☰</button>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <!-- 1. Hero Banner -->
-    <section class="inner-page-banner">
-      <div class="container">
-        <span class="pill-badge pill-badge-live" style="margin-bottom: 12px;">
-          <span class="status-dot"></span> Connect With Us
-        </span>
-        <h1>Contact Bobmanuel</h1>
-        <p>Use the details below to get in touch about my projects, collaboration or learning opportunities.</p>
-      </div>
-    </section>
-
-    <!-- 2. Main Contact Grid (Details & Form) -->
-    <section class="container">
-      <div class="contact-container-grid">
-        
-        <!-- Info Column -->
-        <div class="contact-info-card">
-          <span class="pill-badge">Direct Inquiries</span>
-          <h2 style="font-size: 26px; margin-bottom: 14px;">Let's Connect</h2>
-          <p style="margin-bottom: 25px; font-size: 14.5px; line-height: 1.65;">I'm happy to hear from fellow developers, potential collaborators and anyone interested in my work.</p>
-
-          <div class="contact-detail">
-            <h4>Physical Based in Nigeria</h4>
-            <p>Bobmanuel Hub, Port Harcourt, Rivers State, Nigeria.</p>
-          </div>
-
-          <div class="contact-detail">
-            <h4>Email Communications</h4>
-            <p>Please use my social profiles to connect.</p>
-          </div>
-
-          <div class="contact-detail">
-            <h4>Phone / WhatsApp</h4>
-            <p>Contact details can be shared on request.</p>
-          </div>
-          <p style="font-size: 13px; line-height: 1.6; color: var(--color-text-muted); margin-top: 12px;">Please confirm Bobmanuel's official contact details directly before relying on this page. No placeholder email addresses or phone numbers are listed.</p>
-
-          <div class="contact-detail">
-            <h4>Availability</h4>
-            <p>Open to learning, collaboration and constructive feedback.</p>
-          </div>
-        </div>
-
-        <!-- Form Column -->
-        <div class="contact-form-card">
-          <h2 style="font-size: 26px; margin-bottom: 10px;">Send a Message</h2>
-          <p style="font-size: 14px; color: var(--color-text-muted); margin-bottom: 12px;">This demonstration form checks the required fields. It does not send or store messages.</p>
-          <p role="status" style="font-size: 13px; line-height: 1.6; margin-bottom: 22px; padding: 12px 14px; border-left: 3px solid var(--color-border); background: #f5f5f5; color: #333;">Demonstration form only: your message will not be sent or saved. No backend or email service is connected.</p>
-
-          <form id="contactForm" onsubmit="return validateContactForm(event)">
-            <div class="form-group">
-              <label for="fullName">Full Name *</label>
-              <input type="text" id="fullName" placeholder="e.g. Samuel K. Briggs" required>
-            </div>
-
-            <div class="form-group">
-              <label for="emailAddress">Email Address *</label>
-              <input type="email" id="emailAddress" placeholder="e.g. samuel.briggs@example.com" required>
-            </div>
-
-            <div class="form-group">
-              <label for="trackSelect">Reason for Contact *</label>
-              <select id="trackSelect" required>
-                <option value="">-- Select a reason --</option>
-                <option value="Frontend Web Development">Project feedback</option>
-                <option value="Full-Stack Engineering">Collaboration</option>
-                <option value="Cyber Security & Defense">General enquiry</option>
-                <option value="Financial Market Trading">Other</option>
-                <option value="SIWES Industrial Attachment">Learning opportunity</option>
-                <option value="Computer Basics & Office">Website feedback</option>
-                <option value="Custom Software Development">Project discussion</option>
-                <option value="Corporate Staff Training">Other</option>
-                <option value="General Inquiry">General Question / Physical Visit</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="messageText">Your Message *</label>
-              <textarea id="messageText" placeholder="Write your message here..." required></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-black" style="width: 100%; padding: 14px; font-size: 14px;">Submit Message →</button>
-          </form>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- 3. NEW SECTION: Visiting Hours & Cohort Schedules -->
-    <section class="methodology-section" style="padding-bottom: 60px;">
-      <div class="container">
-        <div class="section-head-split">
-          <div class="section-head-left">
-            <span class="pill-badge">Visitor Guidelines</span>
-            <h2>Contact Information</h2>
-          </div>
-          <div class="section-head-right">
-            <p>Use the contact channels available on my portfolio profiles to reach me.</p>
-          </div>
-        </div>
-
-        <div class="visiting-grid">
-          <div class="visiting-card">
-            <h3>Weekday Inquiries</h3>
-            <p><strong>Mon – Fri: 9:00 AM – 4:30 PM</strong></p>
-            <p style="margin-top: 10px; font-size: 13.5px; color: var(--color-text-body);">Walk-in admissions consultations, facility walk-throughs, and tuition fee payments.</p>
-          </div>
-
-          <div class="visiting-card">
-            <h3>SIWES Logbook Submissions</h3>
-            <p><strong>Tuesdays & Thursdays: 10:00 AM – 2:00 PM</strong></p>
-            <p style="margin-top: 10px; font-size: 13.5px; color: var(--color-text-body);">Dedicated hours for weekly industrial supervisor logbook signatures, progress review, and assessment updates.</p>
-          </div>
-
-          <div class="visiting-card">
-            <h3>Weekend Executive Cohort</h3>
-            <p><strong>Saturdays: 10:00 AM – 4:00 PM</strong></p>
-            <p style="margin-top: 10px; font-size: 13.5px; color: var(--color-text-body);">Intensive sessions for working professionals, project capstone presentations, and technical mock defenses.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 4. NEW SECTION: Transport & Port Harcourt Landmark Directions -->
-    <section class="container" style="margin-bottom: 70px;">
-      <div class="landmarks-box">
-        <div>
-          <span class="pill-badge">Easy Navigation</span>
-          <h2 style="font-size: 30px; margin-bottom: 14px;">My Location</h2>
-          <p style="font-size: 15px; line-height: 1.7; margin-bottom: 16px;">Bobmanuel is strategically situated in Port Harcourt, accessible via major transportation arteries, ride-hailing services (Bolt, Uber), and public transit.</p>
-          <p style="font-size: 14px; line-height: 1.6; color: #555;">Ample visitor parking is provided inside the premises with 24-hour security personnel. When arriving, ask for the Bobmanuel Admissions Reception on the Ground Floor.</p>
-        </div>
-        <div style="background-color: var(--color-black); color: #ffffff; padding: 30px; border-radius: var(--radius-lg);">
-          <h3 style="color: #ffffff; font-size: 20px; margin-bottom: 12px;">Fast Directions Checklist</h3>
-          <p style="font-size: 13.5px; color: #ccc; margin-bottom: 8px;">✓ Central access in Port Harcourt metropolis</p>
-          <p style="font-size: 13.5px; color: #ccc; margin-bottom: 8px;">✓ 5-minute walk from major bus stops</p>
-          <p style="font-size: 13.5px; color: #ccc; margin-bottom: 8px;">✓ Air-conditioned labs with uninterrupted power</p>
-          <p style="font-size: 13.5px; color: #ccc;">✓ Secure gated premises & visitor check-in</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Dark Architectural Footer (Poliform Reference Style) -->
-  <footer class="dark-footer-section" aria-label="Site Footer">
-    <div class="container">
-      <div class="footer-top-row">
-        <div class="footer-top-left">
-          <h2>Let's Connect.</h2>
-          <p>Join an energetic, supportive tech ecosystem right in the heart of Port Harcourt. Submit your application or reach out today.</p>
-          <a href="#contactForm" class="btn btn-white">Fill Contact Form ↑</a>
-        </div>
-        <div class="footer-top-right">
-          <img src="images/consultation-bg.jpg" alt="Portfolio project and learning image">
-        </div>
-      </div>
-
-      <div class="footer-links-grid">
-        <div class="footer-col">
-          <h4>About</h4>
-          <ul>
-            <li><a href="about.html">My Story</a></li>
-            <li><a href="about.html">My Background</a></li>
-            <li><a href="about.html">My Training</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Academic Projects</h4>
-          <ul>
-            <li><a href="courses.html">Full-Stack Web</a></li>
-            <li><a href="courses.html">Cyber Security</a></li>
-            <li><a href="courses.html">Financial Trading</a></li>
-            <li><a href="courses.html">UI/UX Design</a></li>
-            <li><a href="courses.html">SIWES Attachment</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Based in Nigeria</h4>
-          <ul>
-            <li><span>Port Harcourt, Rivers State</span></li>
-            <li><span>Bobmanuel Hub</span></li>
-            <li><span>Mon – Fri: 9:00am – 5:00pm</span></li>
-            <li><a href="contact.html">Get in Touch</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-giant-brand">
-          <h2>Bobmanuel</h2>
-        </div>
-      </div>
-
-      <div class="footer-bottom-bar">
-        <div>&copy; 2026 Bobmanuel / Bobmanuel. All rights reserved.</div>
-        <div>Built with HTML, CSS and JavaScript.</div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Bobmanuel Portfolio</title><meta name="description" content="Contact and professional links for Bobmanuel Sogbeye Tamunodiepriye.">
+<link rel="icon" type="image/svg+xml" href="images/profile-placeholder.svg"><link rel="stylesheet" href="style.css"></head><body>
+  <aside class="top-bar"><div class="container"><strong>Bobmanuel Sogbeye Tamunodiepriye</strong> · Computer Science · Web Development</div></aside>
+  <header class="site-header"><div class="container"><nav class="navbar" aria-label="Main navigation">
+    <a class="brand-logo" href="index.html" aria-label="Bobmanuel home"><span class="brand-mark">B</span><span class="brand-logo-text"><span>Bobmanuel</span><small>Computer Science · Web Developer</small></span></a>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html" >Home</a></li>
+      <li><a href="about.html" >About</a></li>
+      <li><a href="courses.html" >Projects</a></li>
+      <li><a href="services.html" >Skills</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-right-btn"><a href="projects.html" class="btn btn-black" href="courses.html">View Projects</a><button type="button" class="menu-toggle" aria-controls="navMenu" aria-expanded="false" onclick="toggleMenu()" aria-label="Open navigation menu">☰</button></div>
+  </nav></div></header>
+<main><section class="editorial-page-hero"><div class="container"><div class="page-hero-grid"><div class="page-hero-text"><span class="eyebrow-tag">Get in touch</span><h1>Let's connect and build something useful.</h1><p>For project discussions, collaboration or professional enquiries, you can reach me through my public social profiles.</p><div class="page-hero-meta-strip"><span class="meta-pill-item">Web Development</span><span class="meta-pill-item">Projects</span><span class="meta-pill-item">Collaboration</span></div></div><div class="page-hero-photo-wrap"><div class="profile-photo-wrap"><img src="images/profile-photo.jpg" alt="Portrait of Bobmanuel Sogbeye Tamunodiepriye" onerror="this.style.display='none'"><div class="photo-placeholder"><strong>BST</strong><span>Add your photo</span><small>Save your picture as<br>images/profile-photo.jpg</small></div></div></div></div></div></section>
+<section class="methodology-section"><div class="container"><div class="values-grid"><article class="value-card"><span class="eyebrow-tag">Instagram</span><h3>Scott VFX</h3><p>My creative and editing profile.</p><a class="btn btn-black" href="https://www.instagram.com/scott_vfx/" target="_blank" rel="noopener noreferrer">Visit Instagram</a></article><article class="value-card"><span class="eyebrow-tag">YouTube</span><h3>Scott Edits</h3><p>Video content and creative work.</p><a class="btn btn-black" href="https://www.youtube.com/@scottedits-f2g" target="_blank" rel="noopener noreferrer">Visit YouTube</a></article><article class="value-card"><span class="eyebrow-tag">Portfolio</span><h3>Personal website</h3><p>My online portfolio and link hub.</p><a class="btn btn-black" href="https://bobmanuel.name.ng" target="_blank" rel="noopener noreferrer">Visit website</a></article></div></div></section>
+<section class="split-feature-section"><div class="container"><div class="split-feature-box"><div class="split-feature-text"><span class="pill-badge">Demonstration only</span><h2>Contact form practice</h2><p>This form is included to demonstrate HTML forms and JavaScript validation. It does not send, store or deliver messages.</p><form id="contactForm" onsubmit="return validateContactForm(event)"><div class="form-group"><label for="fullName">Your name</label><input id="fullName" name="fullName" type="text" required></div><div class="form-group"><label for="emailAddress">Email address</label><input id="emailAddress" name="emailAddress" type="email" required></div><div class="form-group"><label for="trackSelect">Reason for contact</label><select id="trackSelect" name="reason" required><option value="">Choose one</option><option value="Project discussion">Project discussion</option><option value="Collaboration">Collaboration</option><option value="General enquiry">General enquiry</option></select></div><div class="form-group"><label for="messageText">Message</label><textarea id="messageText" name="message" rows="5" required></textarea></div><button type="submit" class="btn btn-black">Test form validation</button></form></div><div class="split-feature-img"><img src="images/consultation-bg.jpg" alt="Desk setup for creative work"></div></div></div></section></main>
+<footer class="site-footer"><div class="container">
+  <div class="footer-links-grid">
+    <div class="footer-col"><h4>Explore</h4><ul><li><a href="about.html">About me</a></li><li><a href="courses.html">Projects</a></li><li><a href="services.html">Skills</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Education</h4><ul><li>University of Port Harcourt</li><li>Faculty of Computing</li><li>Computer Science · 400 Level</li></ul></div>
+    <div class="footer-col"><h4>Experience</h4><ul><li>SIWES completed</li><li>Skillerville Techspot</li><li>HTML · CSS · JavaScript</li></ul></div>
+    <div class="footer-giant-brand"><h2>Bobmanuel</h2></div>
+  </div>
+  <div class="footer-bottom-bar"><div>&copy; 2026 Bobmanuel Sogbeye Tamunodiepriye.</div><div>Built with HTML, CSS and JavaScript.</div></div>
+</div></footer><script src="script.js"></script></body></html>
