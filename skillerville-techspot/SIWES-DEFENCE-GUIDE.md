@@ -4,17 +4,17 @@
 
 Good morning. My name is **Bobmanuel Sogbeye Tamunodiepriye**. I am a 400 Level Computer Science student of the University of Port Harcourt, Faculty of Computing. I recently completed my Students Industrial Work Experience Scheme (SIWES) at **Skillerville Techspot**, where I practised frontend web development using HTML, CSS and JavaScript.
 
-For my practical demonstration, I prepared a personal portfolio website. It introduces me, presents selected projects, describes my skills and provides contact links. I used HTML for structure, CSS for design and JavaScript for selected interactive features.
+For my practical demonstration, I prepared a personal portfolio website. It introduces me, explains my SIWES experience, describes the skills I practised and provides contact links. I used HTML for structure, CSS for design and JavaScript for selected interactive features.
 
 ## 2. What the website does
 
-This is a personal portfolio, not a Skillerville business website. It presents the developer's background and practical work.
+This is a personal portfolio, not a Skillerville business website. It is the practical website Bobmanuel prepared after completing his industrial training to demonstrate the frontend skills he practised.
 
 | Page | File | Purpose |
 |---|---|---|
 | Home | `index.html` | Introduction, profile photo area and featured work |
 | About | `about.html` | Education, background, SIWES and interests |
-| Projects | `courses.html` | Project cards and project search |
+| Website | `courses.html` | Explains the purpose and features of the portfolio website |
 | Skills | `services.html` | Technical skills and tools |
 | Contact | `contact.html` | Public profile links and demonstration form |
 
@@ -24,7 +24,7 @@ The header navigation connects the pages. The footer provides repeated navigatio
 
 - **HTML5:** defines the structure and content of webpages.
 - **CSS3:** controls colours, typography, spacing, layout, responsive behaviour and animations.
-- **Vanilla JavaScript:** adds the mobile navigation, project search and contact-form validation.
+- **Vanilla JavaScript:** adds the mobile navigation and contact-form validation.
 - **Visual Studio Code:** code editor.
 - **Web browser:** displays and runs the website.
 
@@ -273,15 +273,6 @@ The script finds the navigation list using `document.getElementById("navMenu")`.
 
 The script also closes the menu when the visitor presses Escape, clicks outside the menu or chooses a page link.
 
-### Project search
-
-The Projects page contains a search input. When the visitor types, `searchTracks()`:
-1. Reads the search text.
-2. Finds the project cards.
-3. Compares the search text with each card's text.
-4. Hides cards that do not match.
-5. Displays the number of matching projects.
-
 ### Contact form validation
 
 The form uses HTML field types and required attributes. JavaScript then checks that a name, valid email, reason and message have been entered.
@@ -337,7 +328,6 @@ The pages look for `images/profile-photo.jpg`. If it is not present, the local B
 - Open all five pages from the navigation.
 - Resize the browser or use mobile view in developer tools.
 - Open the mobile menu and test Escape and outside-click closing.
-- Search for a project on the Projects page.
 - Submit the contact form with empty fields and check validation.
 - Complete the form and confirm the notice says the message was not sent or saved.
 - Check that local images load and the pages do not depend on external fonts or libraries.
@@ -345,7 +335,7 @@ The pages look for `images/profile-photo.jpg`. If it is not present, the local B
 ## 11. Sample SIWES defence questions and answers
 
 **Q: What is the aim of your project?**  
-A: The aim is to create a personal portfolio website that introduces me, presents my projects and skills, and provides ways to contact me.
+A: The aim is to create a personal portfolio website that introduces me and demonstrates the HTML, CSS and JavaScript skills I practised during SIWES.
 
 **Q: Why did you choose this project?**  
 A: It allowed me to apply the HTML, CSS and JavaScript skills I practised during industrial training in a practical website.
@@ -357,7 +347,7 @@ A: HTML means HyperText Markup Language. It defines the structure and content of
 A: CSS means Cascading Style Sheets. It controls the appearance and layout of a webpage.
 
 **Q: What is JavaScript?**  
-A: JavaScript is a programming language used here to add interactions such as the mobile menu, project search and form validation.
+A: JavaScript is a programming language used here to add interactions such as the mobile menu and form validation.
 
 **Q: What is the difference between HTML, CSS and JavaScript?**  
 A: HTML provides the structure, CSS controls the presentation, and JavaScript adds behaviour and interactivity.
@@ -377,9 +367,6 @@ A: It checks user input to make sure required information has been entered in an
 **Q: Does your contact form send messages?**  
 A: No. It is a frontend demonstration that validates the fields and displays a message. It does not send or store data because no backend is connected.
 
-**Q: What does the project search do?**  
-A: It filters the project cards based on the text entered by the visitor.
-
 **Q: Why did you separate HTML, CSS and JavaScript?**  
 A: It keeps the project organised. HTML handles structure, CSS handles presentation and JavaScript handles behaviour.
 
@@ -393,25 +380,22 @@ A: A common frontend challenge is making layouts work on different screen sizes 
 A: I gained practical experience structuring webpages with HTML, styling them with CSS, adding interactions with JavaScript, organising project files and testing a website.
 
 **Q: What would you improve in the future?**  
-A: I would connect the contact form to a secure backend, add more project case studies and continue improving accessibility and responsive behaviour.
+A: I would continue testing the website on different screen sizes and improve accessibility and code organisation.
 
 ## 12. Short website demonstration plan
 
 1. Start on the homepage and introduce yourself.
 2. Explain the navigation and open About.
 3. Show your academic background and completed SIWES experience.
-4. Open Projects and explain each project accurately.
-5. Demonstrate the project search by entering a keyword.
-6. Open Skills and explain HTML, CSS and JavaScript.
-7. Open Contact and explain the public links.
-8. Demonstrate form validation and clearly state that the form does not send messages.
+4. Open the Website page and explain the structure and purpose of the portfolio.
+5. Open Skills and explain HTML, CSS and JavaScript.
+6. Open Contact and explain the public links.
+7. Demonstrate form validation and clearly state that the form does not send messages.
 
 ## 13. Important accuracy points
 
 - Say you completed SIWES at Skillerville Techspot. Do not describe Skillerville as your own company.
 - This portfolio website is built with HTML, CSS and vanilla JavaScript.
-- CGPA+ is a separate personal project using React, Vite and Firebase. Do not say the static portfolio uses those technologies.
-- SchoolyHub is assigned contribution work on an existing platform, not a product you created alone.
 - Do not claim the demonstration contact form sends messages.
 - Only explain code you understand. Practise pointing to the relevant file during your demonstration.
 
