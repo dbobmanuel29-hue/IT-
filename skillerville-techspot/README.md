@@ -5,7 +5,7 @@ This project is the personal portfolio website of **Bobmanuel Sogbeye Tamunodiep
 ## Pages
 - `index.html` — homepage and introduction
 - `about.html` — education, background and completed SIWES experience
-- `courses.html` — project showcase
+- `courses.html` — explanation of the SIWES portfolio website
 - `services.html` — technical skills and tools
 - `contact.html` — public links and a demonstration contact form
 - `style.css` — shared styles for all pages
@@ -15,7 +15,7 @@ This project is the personal portfolio website of **Bobmanuel Sogbeye Tamunodiep
 ## Technologies
 - HTML5 — page structure and content
 - CSS3 — layout, colours, typography, responsive design and animations
-- Vanilla JavaScript — mobile menu, project search and form validation
+- Vanilla JavaScript — mobile menu and contact-form validation
 
 The defence website does not require a framework, package installation, external font, CSS library, image CDN or API. The pages use local images and a system-font stack.
 
