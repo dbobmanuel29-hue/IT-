@@ -27,11 +27,11 @@ The defence website does not require a framework, package installation, external
 ## Add your photograph
 The photo area looks for `images/profile-photo.jpg`. Copy your portrait into the `images` folder and give it that exact name. Until then, a local BST placeholder appears. See `ADD-YOUR-PHOTO.txt`.
 
-## Important project notes
-- The contact form is a frontend demonstration. It validates fields but does **not** send or save messages; no backend is connected.
-- **CGPA+** is Bobmanuel's independent academic platform project. Its separate application uses React, Vite and Firebase. Those technologies are not used by this static portfolio website.
-- **SIWES Portfolio Website** is the beginner-friendly HTML, CSS and JavaScript project used to demonstrate foundational frontend skills.
-- **SchoolyHub** is listed only as assigned contribution work on an existing platform, not as a product Bobmanuel created alone.
+## Purpose of the website
+This is the personal portfolio website Bobmanuel prepared as his practical SIWES project after completing industrial training. It presents his background, the skills he practised and the website he built with HTML, CSS and JavaScript. It is intended to be demonstrated and explained during his SIWES defence.
+
+## Important note
+The contact form is a frontend demonstration. It validates fields but does **not** send or save messages; no backend is connected.
 
 ## Defence preparation
 Read `SIWES-DEFENCE-GUIDE.md` for explanations of HTML, CSS and JavaScript, a walkthrough of the website, testing steps and sample defence questions.
