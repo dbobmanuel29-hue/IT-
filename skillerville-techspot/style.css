@@ -2249,3 +2249,30 @@ a, button, summary, [role="button"] {
 a:active, button:active, summary:active, [role="button"]:active {
   -webkit-tap-highlight-color: transparent;
 }
+
+/* Personal portfolio additions */
+.brand-mark{width:42px;height:42px;display:inline-flex;align-items:center;justify-content:center;border-radius:50%;background:#111;color:#fff;font-size:22px;font-weight:800;letter-spacing:-1px}
+.profile-photo-wrap{position:relative;width:100%;min-height:320px;aspect-ratio:4/5;overflow:hidden;border-radius:var(--radius-lg);background:#e9e4dc;display:flex;align-items:center;justify-content:center}
+.profile-photo-wrap img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2}
+.photo-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:#242424;background:#e9e4dc;text-align:center;padding:20px}
+.photo-placeholder strong{font-size:clamp(48px,8vw,82px);letter-spacing:-5px}
+.photo-placeholder span{font-weight:700;font-size:17px}
+.photo-placeholder small{color:#666;line-height:1.5}
+.portfolio-hero .hero-big-title{font-size:clamp(38px,7vw,76px);line-height:1.02;overflow-wrap:anywhere}
+.portfolio-hero .hero-editorial-copy{max-width:780px}
+.portfolio-hero .hero-lower-content{align-items:flex-end}
+.site-footer{background:var(--color-dark-bg);color:var(--color-dark-text);padding:65px 0 22px}
+.site-footer h2,.site-footer h4{color:#fff}
+.site-footer .footer-col li,.site-footer .footer-col a{color:#c7c7c7}
+.site-footer .footer-col a:hover{color:#fff}
+.site-footer .footer-bottom-bar{border-top:1px solid #333;margin-top:30px;padding-top:20px;color:#aaa}
+.course-search-box{margin:24px 0}
+.course-search-box input{width:100%;max-width:520px;padding:14px 17px;border:1px solid var(--color-border);border-radius:var(--radius-pill);background:#fff;color:#111;font:inherit}
+.form-group{display:flex;flex-direction:column;gap:7px;margin:0 0 17px}
+.form-group label{font-size:13px;font-weight:700}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:12px 14px;border:1px solid var(--color-border);border-radius:10px;background:#fff;color:#111;font:inherit}
+.form-group textarea{resize:vertical}
+#contactForm{margin-top:22px}
+#contactForm button{cursor:pointer}
+.search-status{margin-top:12px;min-height:24px}
+@media(max-width:700px){.profile-photo-wrap{min-height:250px}.portfolio-hero .hero-big-title{font-size:clamp(32px,10vw,54px)}.site-footer{padding-top:42px}}
