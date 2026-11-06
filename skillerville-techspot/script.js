@@ -1,4 +1,4 @@
-/* Skillerville Techspot — lightweight site interactions (vanilla JavaScript). */
+/* Skillerville Techspot — simple site interactions using vanilla JavaScript. */
 
 (function () {
   "use strict";
@@ -17,12 +17,13 @@
     button.setAttribute("aria-label", open ? "Close navigation menu" : "Open navigation menu");
   }
 
-  // Kept global because the HTML buttons call this function.
+  // The HTML menu button calls this function.
   window.toggleMenu = function () {
     var menu = getMenu();
     if (menu) setMenuOpen(!menu.classList.contains("show"));
   };
 
+  // Close the mobile menu with Escape or after choosing a page.
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") setMenuOpen(false);
   });
@@ -31,12 +32,29 @@
     var menu = getMenu();
     var button = document.querySelector(".menu-toggle");
     if (!menu || !button || !menu.classList.contains("show")) return;
+
     if (!menu.contains(event.target) && !button.contains(event.target)) {
       setMenuOpen(false);
     }
   });
 
-  // Contact form is intentionally a demonstration only. No data is transmitted.
+  document.addEventListener("DOMContentLoaded", function () {
+    var menu = getMenu();
+    var button = document.querySelector(".menu-toggle");
+
+    if (menu && button) {
+      button.setAttribute("aria-controls", "navMenu");
+      button.setAttribute("aria-expanded", "false");
+
+      menu.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+          setMenuOpen(false);
+        });
+      });
+    }
+  });
+
+  // This demonstration form validates entries but does not send or save data.
   window.validateContactForm = function (event) {
     if (event) event.preventDefault();
 
@@ -63,7 +81,7 @@
       return false;
     }
     if (!track) {
-      alert("Please select a training track or reason for contacting us.");
+      alert("Please select a program or service.");
       trackField.focus();
       return false;
     }
@@ -74,13 +92,13 @@
     }
 
     alert(
-      "Thanks, " + name + "! The form checks are complete, but this is only a demonstration. " +
-      "Your message has NOT been sent or saved."
+      "Thanks, " + name + "! The form checks are complete. " +
+      "This is only a demonstration: your message has NOT been sent or saved."
     );
     return false;
   };
 
-  // Filters the available track cards and announces the result accessibly.
+  // Search the training cards and announce how many match.
   window.searchTracks = function () {
     var searchInput = document.getElementById("trackSearchInput");
     if (!searchInput) return;
@@ -90,9 +108,8 @@
     var visibleCount = 0;
 
     cards.forEach(function (card) {
-      var title = card.querySelector("h3");
       var searchableText = (card.textContent || "").toLocaleLowerCase();
-      var matches = !filter || searchableText.indexOf(filter) !== -1;
+      var matches = searchableText.indexOf(filter) !== -1;
       card.hidden = !matches;
       if (matches) visibleCount += 1;
     });
@@ -104,21 +121,15 @@
       results.className = "search-status";
       results.setAttribute("role", "status");
       results.setAttribute("aria-live", "polite");
-      searchInput.closest(".course-search-box").insertAdjacentElement("afterend", results);
+
+      var searchBox = searchInput.closest(".course-search-box");
+      if (searchBox) searchBox.insertAdjacentElement("afterend", results);
     }
 
-    results.textContent = visibleCount === 0
-      ? "No training tracks match your search. Try another keyword."
-      : "Showing " + visibleCount + (visibleCount === 1 ? " training track." : " training tracks.");
+    if (results) {
+      results.textContent = visibleCount === 0
+        ? "No training tracks match your search. Try another keyword."
+        : "Showing " + visibleCount + (visibleCount === 1 ? " training track." : " training tracks.");
+    }
   };
-
-  // Ensure the menu starts in a predictable, accessible state.
-  document.addEventListener("DOMContentLoaded", function () {
-    var menu = getMenu();
-    var button = document.querySelector(".menu-toggle");
-    if (menu && button) {
-      button.setAttribute("aria-controls", "navMenu");
-      button.setAttribute("aria-expanded", "false");
-    }
-  });
 })();
