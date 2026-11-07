@@ -1,0 +1,41 @@
+name: Build Bobmanuel SIWES defence website archive
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "skillerville-techspot/**"
+      - ".github/workflows/siwes-defence-package.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the latest main branch
+        uses: actions/checkout@v4
+
+      - name: Check required website files
+        run: |
+          test -f skillerville-techspot/index.html
+          test -f skillerville-techspot/about.html
+          test -f skillerville-techspot/courses.html
+          test -f skillerville-techspot/services.html
+          test -f skillerville-techspot/contact.html
+          test -f skillerville-techspot/style.css
+          test -f skillerville-techspot/script.js
+          test -f skillerville-techspot/images/profile-placeholder.svg
+
+      - name: Package the complete website folder
+        run: |
+          zip -qr Bobmanuel-SIWES-Website-Source.zip skillerville-techspot
+
+      - name: Upload website source archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: Bobmanuel-SIWES-Website-Source
+          path: Bobmanuel-SIWES-Website-Source.zip
+          retention-days: 7
