@@ -1,11 +1,58 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Frontend web development skills practised by Bobmanuel."><meta name="theme-color" content="#101812"><title>Skills | Bobmanuel</title><link rel="icon" type="image/svg+xml" href="assets/images/logo.svg"><link rel="stylesheet" href="assets/css/style.css"><script src="assets/js/script.js" defer></script></head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Frontend web development skills practised by Bobmanuel.">
+  <meta name="theme-color" content="#101812">
+  <title>Skills | Bobmanuel</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/script.js" defer></script>
+</head>
 <body>
-  <!-- Shared site header. -->
-  <header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><img src="assets/images/logo.svg" alt="" width="42" height="42"><span><strong>Bobmanuel</strong><small>Computer Science · Web Development</small></span></a><button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation">☰</button><nav class="site-nav" id="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a><a href="skills.html" aria-current="page">Skills</a><a href="contact.html">Contact</a></nav></div></header>
-  <main><section class="page-intro"><div class="container narrow"><p class="eyebrow">Skills</p><h1>My current technical foundations.</h1><p class="lead">These are the tools and concepts I have practised while learning to build websites. I am continuing to improve them.</p></div></section>
-  <section class="section"><div class="container card-grid two"><article class="skill-card"><span class="card-number">01</span><h2>HTML5</h2><p>Page structure, semantic elements, headings, links, images, lists and forms.</p><span class="skill-level">Practised</span></article><article class="skill-card"><span class="card-number">02</span><h2>CSS3</h2><p>Selectors, colours, typography, spacing, the box model, Flexbox, Grid and media queries.</p><span class="skill-level">Practised</span></article><article class="skill-card"><span class="card-number">03</span><h2>JavaScript</h2><p>Variables, functions, conditions, events, DOM selection and basic form validation.</p><span class="skill-level">Learning and practising</span></article><article class="skill-card"><span class="card-number">04</span><h2>Visual Studio Code</h2><p>Writing and organising project files, editing code and working through errors.</p><span class="skill-level">Used for development</span></article></div></section></main>
-  <!-- Shared site footer. -->
-  <footer class="site-footer"><div class="container footer-top"><div><a class="footer-brand" href="index.html">Bobmanuel</a><p>Computer Science student learning and building for the web.</p></div><div class="footer-links"><a href="about.html">About</a><a href="projects.html">Projects</a><a href="skills.html">Skills</a><a href="contact.html">Contact</a></div></div><div class="container footer-bottom"><span>© 2026 Bobmanuel Sogbeye Tamunodiepriye</span><span>Built with HTML, CSS and JavaScript.</span></div></footer>
-</body></html>
+  <!-- Shared header: keep the same navigation on every page. -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Bobmanuel home">
+        <img src="assets/images/logo.svg" alt="Bobmanuel logo" width="44" height="44">
+        <span><strong>Bobmanuel</strong><small>Frontend Developer</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation">☰</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="index.html" >Home</a>
+        <a href="about.html" >About</a>
+        <a href="projects.html" >Projects</a>
+        <a href="skills.html" aria-current="page">Skills</a>
+        <a href="contact.html" >Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="page-intro"><div class="container narrow"><p class="eyebrow">Tools & knowledge</p><h1>Skills<span class="heading-period">.</span></h1><p class="lead">The frontend skills I have practised so far, along with the tools I use to build websites.</p></div></section>
+    <section class="section"><div class="container"><div class="card-grid two">
+      <article class="skill-card"><span class="card-number">01</span><h2>HTML</h2><p>Writing page structure with headings, paragraphs, links, images, lists and forms.</p><span class="skill-level">Practised</span></article>
+      <article class="skill-card"><span class="card-number">02</span><h2>CSS</h2><p>Using selectors, colours, spacing, the box model, Flexbox, Grid and media queries.</p><span class="skill-level">Practised</span></article>
+      <article class="skill-card"><span class="card-number">03</span><h2>JavaScript</h2><p>Using variables, functions, conditions, events and basic form validation.</p><span class="skill-level">Learning & practising</span></article>
+      <article class="skill-card"><span class="card-number">04</span><h2>Visual Studio Code</h2><p>Writing code, organising files and using the editor to find and fix mistakes.</p><span class="skill-level">Used for development</span></article>
+    </div></div></section>
+    <section class="section section-soft"><div class="container feature-row"><div><p class="eyebrow">My approach</p><h2>Understand the basics first.</h2><p>I prefer to keep my code clear and build features step by step. This makes it easier to understand how each part of a website works.</p></div><div class="feature-note"><span class="feature-kicker">CURRENT FOCUS</span><strong>HTML · CSS · JavaScript</strong><small>Practising the fundamentals and improving through projects.</small></div></div></section>
+  </main>
+  <!-- Shared footer: same links and details across all pages. -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-about">
+        <a class="footer-brand" href="index.html">Bobmanuel<span>.</span></a>
+        <p>Computer Science student with an interest in frontend web development.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a><a href="skills.html">Skills</a><a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Bobmanuel Sogbeye Tamunodiepriye</span>
+      <span>Designed and built with HTML, CSS and JavaScript.</span>
+    </div>
+  </footer>
+</body>
+</html>

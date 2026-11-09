@@ -1,12 +1,60 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Frontend development project by Bobmanuel."><meta name="theme-color" content="#101812"><title>Projects | Bobmanuel</title><link rel="icon" type="image/svg+xml" href="assets/images/logo.svg"><link rel="stylesheet" href="assets/css/style.css"><script src="assets/js/script.js" defer></script></head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A look at a frontend website project created by Bobmanuel during industrial training.">
+  <meta name="theme-color" content="#101812">
+  <title>Projects | Bobmanuel</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/script.js" defer></script>
+</head>
 <body>
-  <!-- Shared site header. -->
-  <header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><img src="assets/images/logo.svg" alt="" width="42" height="42"><span><strong>Bobmanuel</strong><small>Computer Science · Web Development</small></span></a><button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation">☰</button><nav class="site-nav" id="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html" aria-current="page">Projects</a><a href="skills.html">Skills</a><a href="contact.html">Contact</a></nav></div></header>
-  <main><section class="page-intro"><div class="container narrow"><p class="eyebrow">Projects</p><h1>Work I can explain.</h1><p class="lead">A closer look at the practical website project I created to apply my frontend development skills.</p></div></section>
-  <section class="section"><div class="container project-layout"><div class="project-panel"><span class="project-label">SIWES practical project</span><h2>Personal Portfolio Website</h2><p>A responsive, multi-page website built with HTML, CSS and vanilla JavaScript. It introduces me, explains my learning journey and presents the skills I practised.</p><div class="tag-list"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive layout</span></div></div><div class="project-details"><div><strong>01</strong><h3>Page structure</h3><p>HTML elements organise headings, paragraphs, images, links and forms.</p></div><div><strong>02</strong><h3>Visual styling</h3><p>CSS controls colours, spacing, typography, layout and mobile responsiveness.</p></div><div><strong>03</strong><h3>Basic interaction</h3><p>JavaScript opens the mobile menu and checks the demonstration contact form.</p></div></div></div></section>
-  <section class="section section-soft"><div class="container narrow"><p class="eyebrow">Project note</p><h2>Built to be understandable.</h2><p>The files are separated into HTML pages, one stylesheet, one JavaScript file and a local images folder. Comments in the code explain the purpose of each main section.</p></div></section></main>
-  <!-- Shared site footer. -->
-  <footer class="site-footer"><div class="container footer-top"><div><a class="footer-brand" href="index.html">Bobmanuel</a><p>Computer Science student learning and building for the web.</p></div><div class="footer-links"><a href="about.html">About</a><a href="projects.html">Projects</a><a href="skills.html">Skills</a><a href="contact.html">Contact</a></div></div><div class="container footer-bottom"><span>© 2026 Bobmanuel Sogbeye Tamunodiepriye</span><span>Built with HTML, CSS and JavaScript.</span></div></footer>
-</body></html>
+  <!-- Shared header: keep the same navigation on every page. -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Bobmanuel home">
+        <img src="assets/images/logo.svg" alt="Bobmanuel logo" width="44" height="44">
+        <span><strong>Bobmanuel</strong><small>Frontend Developer</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation">☰</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="index.html" >Home</a>
+        <a href="about.html" >About</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="skills.html" >Skills</a>
+        <a href="contact.html" >Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="page-intro"><div class="container narrow"><p class="eyebrow">Selected project</p><h1>Projects<span class="heading-period">.</span></h1><p class="lead">A look at a website I built while practising the basics of frontend development.</p></div></section>
+    <section class="section"><div class="container project-layout">
+      <article class="project-panel"><span class="project-label">SIWES PROJECT · 01</span><h2>Personal Portfolio Website</h2><p>A responsive website designed to introduce me, share my learning journey and show the frontend skills I have practised.</p><div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive design</span></div></article>
+      <div class="project-details">
+        <article><strong>01</strong><div><h3>Page structure</h3><p>HTML is used to add headings, paragraphs, images, navigation links and form fields.</p></div></article>
+        <article><strong>02</strong><div><h3>Page styling</h3><p>CSS is used for the colours, spacing, layout, typography and mobile screen adjustments.</p></div></article>
+        <article><strong>03</strong><div><h3>Simple interactions</h3><p>JavaScript controls the mobile navigation and checks the contact form fields.</p></div></article>
+      </div>
+    </div></section>
+    <section class="section section-soft"><div class="container narrow"><p class="eyebrow">How it is organised</p><h2>Simple files, clear purpose.</h2><p>Each page has its own HTML file. The shared design is kept in one CSS file, while the small interactive features are in one JavaScript file. Images are stored locally in the images folder.</p><p>The contact form is for demonstration only. It checks the entered details in the browser; it does not send or save messages.</p></div></section>
+  </main>
+  <!-- Shared footer: same links and details across all pages. -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-about">
+        <a class="footer-brand" href="index.html">Bobmanuel<span>.</span></a>
+        <p>Computer Science student with an interest in frontend web development.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a><a href="skills.html">Skills</a><a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Bobmanuel Sogbeye Tamunodiepriye</span>
+      <span>Designed and built with HTML, CSS and JavaScript.</span>
+    </div>
+  </footer>
+</body>
+</html>

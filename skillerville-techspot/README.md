@@ -1,33 +1,37 @@
 # Bobmanuel Portfolio Website
 
-A beginner-friendly, multi-page portfolio website built with plain HTML, CSS and JavaScript.
+A simple, responsive personal portfolio built with HTML, CSS and vanilla JavaScript.
 
-## Folder structure
+## Project structure
 
 ```text
 skillerville-techspot/
-├── index.html
-├── about.html
-├── projects.html
-├── skills.html
-├── contact.html
+├── index.html                 # Home page
+├── about.html                 # Personal introduction and background
+├── projects.html              # Details about the SIWES website project
+├── skills.html                # Frontend skills and tools
+├── contact.html               # Public links and practice contact form
 └── assets/
-    ├── css/style.css
-    ├── js/script.js
+    ├── css/
+    │   └── style.css          # Shared website design
+    ├── js/
+    │   └── script.js          # Mobile menu and form validation
     └── images/
-        ├── logo.svg
-        └── profile.jpg
+        ├── logo.svg           # Website logo and favicon
+        └── profile.jpg        # Profile photograph
 ```
 
 ## Open the website
-Open this folder and double-click `index.html`. No installation, server, external font, framework or library is required.
 
-## Where to edit
-- Page content: the matching HTML file.
-- Colours, spacing and layout: `assets/css/style.css`.
-- Mobile menu and form behaviour: `assets/js/script.js`.
-- Logo and profile photograph: `assets/images/`.
+Open the project folder and double-click `index.html`. No installation or external library is required.
 
-The contact form is a demonstration only. It validates the fields in the browser and does not send or store messages.
+## Where to make changes
 
-The header, navigation, favicon and footer are shared visually across every page. The markup is repeated in each page so it stays understandable without a template engine or framework.
+- Text and page sections: edit the matching HTML file.
+- Colours, spacing and layout: edit `assets/css/style.css`.
+- Mobile navigation and form validation: edit `assets/js/script.js`.
+- Logo and profile picture: replace the files in `assets/images/`.
+
+The same header, navigation, favicon and footer are used on all five pages. The HTML is repeated on each page so the project remains easy to follow without a template system.
+
+The contact form is for demonstration only. It checks the fields in the browser and does not send or store messages.

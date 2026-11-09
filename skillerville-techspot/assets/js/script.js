@@ -1,8 +1,8 @@
 /* BOBMANUEL PORTFOLIO
-   This file contains the small interactive parts of the website. */
+   This file handles the small interactive features used by the pages. */
 "use strict";
 
-// 1. Mobile navigation: open and close the page links.
+/* 1. Mobile navigation: show and hide the page links. */
 const menuButton = document.querySelector(".menu-toggle");
 const siteNav = document.querySelector("#site-nav");
 
@@ -14,7 +14,7 @@ if (menuButton && siteNav) {
     menuButton.textContent = isOpen ? "×" : "☰";
   });
 
-  // Close the menu after a visitor chooses a page.
+  // Close the navigation after a page link is selected.
   siteNav.querySelectorAll("a").forEach(function (link) {
     link.addEventListener("click", function () {
       siteNav.classList.remove("is-open");
@@ -24,29 +24,32 @@ if (menuButton && siteNav) {
     });
   });
 
-  // Escape is another way to close the mobile menu.
+  // Allow the Escape key to close the mobile navigation.
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
       siteNav.classList.remove("is-open");
       menuButton.setAttribute("aria-expanded", "false");
+      menuButton.setAttribute("aria-label", "Open navigation");
       menuButton.textContent = "☰";
     }
   });
 }
 
-// 2. Contact form: check the fields but do not send or store anything.
+/* 2. Practice contact form: validate fields without sending a message. */
 const contactForm = document.querySelector("#contact-form");
 const formFeedback = document.querySelector("#form-feedback");
 
 if (contactForm && formFeedback) {
   contactForm.addEventListener("submit", function (event) {
     event.preventDefault();
+
     if (!contactForm.checkValidity()) {
-      formFeedback.textContent = "Please complete all fields with valid details.";
+      formFeedback.textContent = "Please enter your name, a valid email and a message.";
       contactForm.reportValidity();
       return;
     }
-    formFeedback.textContent = "The form is valid. This is a demonstration only; no message was sent or saved.";
+
+    formFeedback.textContent = "All fields look good. This practice form does not send or save messages.";
     contactForm.reset();
   });
 }
