@@ -1,37 +1,33 @@
-# Bobmanuel — Personal Portfolio
+# Bobmanuel Portfolio Website
 
-This project is the personal portfolio website of **Bobmanuel Sogbeye Tamunodiepriye**, a 400 Level Computer Science student at the University of Port Harcourt.
+A beginner-friendly, multi-page portfolio website built with plain HTML, CSS and JavaScript.
 
-## Pages
-- `index.html` — homepage and introduction
-- `about.html` — education, background and completed SIWES experience
-- `courses.html` — explanation of the SIWES portfolio website
-- `services.html` — technical skills and tools
-- `contact.html` — public links and a demonstration contact form
-- `style.css` — shared styles for all pages
-- `script.js` — shared interactive features
-- `images/` — local image assets
+## Folder structure
 
-## Technologies
-- HTML5 — page structure and content
-- CSS3 — layout, colours, typography, responsive design and animations
-- Vanilla JavaScript — mobile menu and contact-form validation
+```text
+skillerville-techspot/
+├── index.html
+├── about.html
+├── projects.html
+├── skills.html
+├── contact.html
+└── assets/
+    ├── css/style.css
+    ├── js/script.js
+    └── images/
+        ├── logo.svg
+        └── profile.jpg
+```
 
-The defence website does not require a framework, package installation, external font, CSS library, image CDN or API. The pages use local images and a system-font stack.
+## Open the website
+Open this folder and double-click `index.html`. No installation, server, external font, framework or library is required.
 
-## Run the website
-1. Open this folder in Visual Studio Code.
-2. Open `index.html` in a browser, or use the Live Server extension if installed.
-3. Navigate through the five pages.
+## Where to edit
+- Page content: the matching HTML file.
+- Colours, spacing and layout: `assets/css/style.css`.
+- Mobile menu and form behaviour: `assets/js/script.js`.
+- Logo and profile photograph: `assets/images/`.
 
-## Add your photograph
-The photo area looks for `images/profile-photo.jpg`. Copy your portrait into the `images` folder and give it that exact name. Until then, a local BST placeholder appears. See `ADD-YOUR-PHOTO.txt`.
+The contact form is a demonstration only. It validates the fields in the browser and does not send or store messages.
 
-## Purpose of the website
-This is the personal portfolio website Bobmanuel prepared as his practical SIWES project after completing industrial training. It presents his background, the skills he practised and the website he built with HTML, CSS and JavaScript. It is intended to be demonstrated and explained during his SIWES defence.
-
-## Important note
-The contact form is a frontend demonstration. It validates fields but does **not** send or save messages; no backend is connected.
-
-## Defence preparation
-Read `SIWES-DEFENCE-GUIDE.md` for explanations of HTML, CSS and JavaScript, a walkthrough of the website, testing steps and sample defence questions.
+The header, navigation, favicon and footer are shared visually across every page. The markup is repeated in each page so it stays understandable without a template engine or framework.
