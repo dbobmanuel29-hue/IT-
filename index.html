@@ -1,15 +1,237 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="refresh" content="0; url=skillerville-techspot/index.html">
-  <title>Bobmanuel | Portfolio</title>
-  <link rel="canonical" href="skillerville-techspot/index.html">
-</head>
-<body>
-  <p>Opening Bobmanuel's portfolio…</p>
-  <p>If you are not redirected, <a href="skillerville-techspot/index.html">open the portfolio here</a>.</p>
-  <script>window.location.replace("skillerville-techspot/index.html");</script>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Portfolio of Bobmanuel, a Computer Science student and aspiring frontend developer."
+    />
+    <meta name="theme-color" content="#101812">
+    <title>
+      Home | Bobmanuel
+    </title>
+    <link rel="icon" type="image/svg+xml" href="skillerville-techspot/assets/images/logo.svg">
+    <link rel="stylesheet" href="skillerville-techspot/assets/css/style.css">
+    <script src="skillerville-techspot/assets/js/script.js" defer>
+    </script>
+  </head>
+  <body>
+    <!-- Shared header: keep the same navigation on every page. -->
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="skillerville-techspot/index.html" aria-label="Bobmanuel home">
+          <img src="skillerville-techspot/assets/images/logo.svg" alt="Bobmanuel logo" width="44" height="44">
+          <span>
+            <strong>
+              Bobmanuel
+            </strong>
+            <small>
+              Frontend Developer
+            </small>
+          </span>
+        </a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-controls="site-nav"
+          aria-expanded="false"
+          aria-label="Open navigation"
+        >
+          ☰
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+          <a href="skillerville-techspot/index.html" aria-current="page">Home</a>
+          <a href="skillerville-techspot/about.html">About</a>
+          <a href="skillerville-techspot/experience.html">My Journey</a>
+          <a href="skillerville-techspot/skills.html">Skills</a>
+          <a href="skillerville-techspot/contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- Hero section: introduction and profile image. -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">
+              <span class="eyebrow-line">
+              </span>
+              Computer Science Student · UniPort
+            </p>
+            <h1>
+              Hi, I'm
+              <span>
+                Bobmanuel.
+              </span>
+            </h1>
+            <h2 class="hero-subtitle">
+              I create simple, clean websites.
+            </h2>
+            <p class="lead">
+              I'm a Computer Science student building my skills in frontend web development with HTML, CSS
+              and JavaScript.
+            </p>
+            <div class="button-row">
+              <a class="button button-primary" href="skillerville-techspot/experience.html">
+                View my journey
+                <span aria-hidden="true">
+                  ↗
+                </span>
+              </a>
+              <a class="button button-outline" href="skillerville-techspot/contact.html">
+                Get in touch
+              </a>
+            </div>
+            <p class="small-note">
+              Curious by nature. Always learning by building.
+            </p>
+          </div>
+          <div class="hero-photo-wrap">
+            <div class="photo-decoration">
+            </div>
+            <div class="hero-photo">
+              <img src="skillerville-techspot/assets/images/profile.jpg" alt="Portrait of Bobmanuel">
+            </div>
+            <div class="photo-caption">
+              <span class="caption-dot">
+              </span>
+              <div>
+                <strong>
+                  Bobmanuel
+                </strong>
+                <small>
+                  Frontend Developer
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Short introduction to the skills used on this website. -->
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">
+              What I use
+            </p>
+            <h2>
+              The building blocks of my websites.
+            </h2>
+            <p>
+              I focus on the core tools used to create and style web pages, then add useful interactions.
+            </p>
+          </div>
+          <div class="card-grid three">
+            <article class="info-card">
+              <span class="card-number">
+                01 / STRUCTURE
+              </span>
+              <h3>
+                HTML
+              </h3>
+              <p>
+                I use HTML to organise content such as headings, text, images, links and forms.
+              </p>
+            </article>
+            <article class="info-card">
+              <span class="card-number">
+                02 / DESIGN
+              </span>
+              <h3>
+                CSS
+              </h3>
+              <p>
+                I use CSS to control colours, spacing, layouts and how a website looks on different screens.
+              </p>
+            </article>
+            <article class="info-card">
+              <span class="card-number">
+                03 / INTERACTION
+              </span>
+              <h3>
+                JavaScript
+              </h3>
+              <p>
+                I use JavaScript for simple features such as menu buttons and form checks.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Featured project preview. -->
+      <section class="section section-soft">
+        <div class="container feature-row">
+          <div>
+            <p class="eyebrow">
+              Featured project
+            </p>
+            <h2>
+              A portfolio built from the ground up.
+            </h2>
+            <p>
+              This multi-page website brings together the frontend skills I have practised during my
+              industrial training.
+            </p>
+            <a class="text-link" href="skillerville-techspot/experience.html">
+              View my journey
+              <span aria-hidden="true">
+                →
+              </span>
+            </a>
+          </div>
+          <div class="feature-note">
+            <span class="feature-kicker">
+              THE TOOLS
+            </span>
+            <strong>
+              HTML
+              <i>
+                ·
+              </i>
+              CSS
+              <i>
+                ·
+              </i>
+              JavaScript
+            </strong>
+            <small>
+              Built with simple code and a clear file structure.
+            </small>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Shared footer: same links and details across all pages. -->
+    <footer class="site-footer">
+      <div class="container footer-top">
+        <div class="footer-about">
+          <a class="footer-brand" href="skillerville-techspot/index.html">
+            Bobmanuel
+            <span>
+              .
+            </span>
+          </a>
+          <p>
+            Computer Science student with an interest in frontend web development.
+          </p>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="skillerville-techspot/index.html">Home</a>
+          <a href="skillerville-techspot/about.html">About</a>
+          <a href="skillerville-techspot/experience.html">My Journey</a>
+          <a href="skillerville-techspot/skills.html">Skills</a>
+          <a href="skillerville-techspot/contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="container footer-bottom">
+        <span>
+          © 2026 Bobmanuel Sogbeye Tamunodiepriye
+        </span>
+        <span>
+          Designed and built with HTML, CSS and JavaScript.
+        </span>
+      </div>
+    </footer>
+  </body>
 </html>
