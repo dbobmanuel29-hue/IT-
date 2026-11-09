@@ -58,25 +58,28 @@ if (contactForm && formFeedback) {
 
 /* 3. Reveal sections gently as the visitor scrolls down. */
 const revealItems = document.querySelectorAll(
-  ".section, .page-intro, .timeline-item, .info-card, .skill-card, .form-panel, .contact-links a"
+  ".page-intro .container, .timeline-item, .info-card, .skill-card, .form-panel, .contact-links a"
 );
-if ("IntersectionObserver" in window) {
+
+if ("IntersectionObserver" in window &&
+    !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
   revealItems.forEach(function (item) {
     item.setAttribute("data-reveal", "");
   });
-  const revealObserver = new IntersectionObserver(function (entries, observer) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("is-visible");
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.12 });
+
+  const revealObserver = new IntersectionObserver(
+    function (entries, observer) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.08, rootMargin: "0px 0px -24px 0px" }
+  );
+
   revealItems.forEach(function (item) {
     revealObserver.observe(item);
-  });
-} else {
-  revealItems.forEach(function (item) {
-    item.classList.add("is-visible");
   });
 }
